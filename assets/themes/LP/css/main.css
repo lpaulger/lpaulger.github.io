@@ -552,12 +552,17 @@ a:hover {
   text-decoration: underline;
 }
 
+/* line 26, ../sass/main.scss */
+.hero-unit {
+  background-color: #BBD8E9;
+}
+
 /******************************************************************
 
  * Layout
 
  *******************************************************************/
-/* line 32, ../sass/main.scss */
+/* line 36, ../sass/main.scss */
 .wrapper {
   *zoom: 1;
   max-width: 59em;
@@ -574,19 +579,19 @@ a:hover {
   clear: both;
 }
 
-/* line 34, ../sass/main.scss */
+/* line 38, ../sass/main.scss */
 .center {
   text-align: center;
 }
 
-/* line 39, ../sass/main.scss */
+/* line 43, ../sass/main.scss */
 [role="navigation"] ul {
   list-style: none;
   padding: 0;
   margin: 0;
   max-width: none;
 }
-/* line 45, ../sass/main.scss */
+/* line 49, ../sass/main.scss */
 [role="navigation"] ul li {
   display: inline-block;
   width: 25%;
@@ -599,45 +604,45 @@ a:hover {
  * Typography
 
 *******************************************************************/
-/* line 60, ../sass/main.scss */
+/* line 64, ../sass/main.scss */
 h1, h2, h3, h4, h5, h6, [role="navigation"] {
   margin: 0;
   color: black;
 }
 
-/* line 65, ../sass/main.scss */
+/* line 69, ../sass/main.scss */
 [role="navigation"] a {
   text-align: center;
   font-size: 1.33333em;
   line-height: 2.25em;
 }
 
-/* line 70, ../sass/main.scss */
+/* line 74, ../sass/main.scss */
 h1 {
   margin: 0;
   font-size: 3.5em;
   line-height: 1.28571em;
 }
 
-/* line 75, ../sass/main.scss */
+/* line 79, ../sass/main.scss */
 h2 {
   font-size: 3.0em;
   line-height: 1.5em;
 }
 
-/* line 79, ../sass/main.scss */
+/* line 83, ../sass/main.scss */
 h3 {
   font-size: 1.5em;
   line-height: 2.0em;
 }
 
-/* line 83, ../sass/main.scss */
+/* line 87, ../sass/main.scss */
 h4 {
   font-size: 1.33333em;
   line-height: 2.25em;
 }
 
-/* line 87, ../sass/main.scss */
+/* line 91, ../sass/main.scss */
 p {
   margin: 0;
   font-size: 1em;
@@ -645,7 +650,7 @@ p {
   margin-bottom: 1.5em;
 }
 
-/* line 93, ../sass/main.scss */
+/* line 97, ../sass/main.scss */
 h1 span {
   font-size: 0.5em;
   line-height: 4.5em;
@@ -656,12 +661,12 @@ h1 span {
 /*
 Header
  */
-/* line 105, ../sass/main.scss */
+/* line 109, ../sass/main.scss */
 body > header h1 {
   text-align: left;
 }
 
-/* line 112, ../sass/main.scss */
+/* line 116, ../sass/main.scss */
 #home {
   width: 49.15254%;
   float: left;
@@ -670,8 +675,17 @@ body > header h1 {
   height: 100%;
   text-align: left;
 }
+/* line 121, ../sass/main.scss */
+#home .hero-unit {
+  padding: 30px;
+}
+/* line 124, ../sass/main.scss */
+#home .hero-unit h1 {
+  font-size: 3.0em;
+  line-height: 1.5em;
+}
 
-/* line 118, ../sass/main.scss */
+/* line 130, ../sass/main.scss */
 [role="main"] aside {
   width: 49.15254%;
   float: right;
@@ -681,7 +695,7 @@ body > header h1 {
   text-align: left;
 }
 
-/* line 127, ../sass/main.scss */
+/* line 139, ../sass/main.scss */
 footer {
   clear: both;
 }

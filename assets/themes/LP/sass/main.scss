@@ -23,6 +23,10 @@ a {
   }
 }
 
+.hero-unit {
+  background-color: #BBD8E9;
+}
+
 /******************************************************************
 
  * Layout
@@ -109,10 +113,18 @@ body > header{
 
 // Sections
 
-#home{
+#home {
   @include span-columns(6, 12);
   height: 100%;
   text-align: left;
+
+  .hero-unit{
+    padding: 30px;
+
+    h1 {
+      @include adjust-font-size-to($h2);
+    }
+  }
 }
 
 [role="main"] aside {
