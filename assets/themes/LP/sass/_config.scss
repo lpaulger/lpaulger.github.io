@@ -4,16 +4,16 @@ $debug: false;
 // Typography
 //$base-font-size: 18px;
 //$base-line-height: 27px;
-$nav: 36pt;
-$h1: 80pt;
-$h2: 60pt;
-$h3: 24px;
-$h4: 20px;
+$nav: 24pt;
+$h1: 42pt;
+$h2: 36pt;
+$h3: 18pt;
+$h4: 16pt;
 
 // Colors
 
 $primary-color: #ffe200;
-$black: #000;
+$black: #333333;
 $gray: #CCC;
 $headers: #000;
 $body-text: #000;
@@ -28,13 +28,14 @@ $page-footer: #000;
 $form-outline-color: #BCC942;
 $action-button-background: $primary-color;
 
+$section-header-height: 78%;
+
+
 // Layout
 $total-columns: 12;
 $column-width: 4em;
 $gutter-width: 1em;
 $grid-padding: $gutter-width;
-
-$section-header-height: 78%;
 
 // Images
 

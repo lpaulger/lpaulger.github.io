@@ -2,3 +2,128 @@
 @import 'config';
 @import 'normalize';
 @import 'susy';
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.wrapper{
+  @extend %container;
+  background-color: #ECECF0;
+}
+
+a {
+  //color: $primary-color;
+  text-decoration: none;
+
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+/******************************************************************
+
+ * Layout
+
+ *******************************************************************/
+
+%container  { @include container; }
+
+.center {
+  text-align: center;
+}
+
+[role="navigation"] {
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: none;
+
+    li {
+      display: inline-block;
+      width: 25%;
+      margin-right: -4px;
+      text-align: center;
+    }
+  }
+}
+
+/******************************************************************
+
+ * Typography
+
+*******************************************************************/
+
+#{headings()}, [role="navigation"] {
+  margin: 0;
+  color: $headers;
+}
+
+[role="navigation"] a{
+  text-align: center;
+  @include adjust-font-size-to($nav/1.5);
+}
+
+h1 {
+  margin: 0;
+  @include adjust-font-size-to($h1);
+}
+
+h2 {
+  @include adjust-font-size-to($h2);
+}
+
+h3 {
+  @include adjust-font-size-to($h3);
+}
+
+h4 {
+  @include adjust-font-size-to($h4);
+}
+
+p {
+  margin: 0;
+  @include adjust-font-size-to($base-font-size, 1.5);
+  @include trailer;
+}
+
+h1 span {
+  @include adjust-font-size-to($base-font-size/2, 1.5);
+  vertical-align: middle;
+  color: #999;
+}
+
+/*
+Header
+ */
+
+body > header{
+
+  h1{
+    text-align: left;
+  } 
+}
+
+// Sections
+
+#home{
+  @include span-columns(6, 12);
+  height: 100%;
+  text-align: left;
+}
+
+[role="main"] aside {
+  @include span-columns(6 omega, 12);
+  text-align: left;
+}
+
+
+
+//footer
+
+footer {
+  clear: both;
+}
