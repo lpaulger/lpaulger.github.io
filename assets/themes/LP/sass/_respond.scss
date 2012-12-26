@@ -1,0 +1,114 @@
+@mixin respond-to($size) {
+
+  /**
+   * Smartphones
+   */
+
+  @if $size == 'mobile' {
+
+    // Handles "all" smartphones...
+
+    @media only screen
+           and (max-width : 480px) {
+      @content;
+    }
+
+  }
+
+  /**
+   * Not Smartphones (anything bigger than mobile)
+   */
+
+  @if $size == '> mobile' {
+
+    // Handles "all" tablets...
+
+    @media only screen
+           and (min-width: 481px) {
+      @content;
+    }
+
+  }
+
+  /**
+   * Tablets
+   */
+
+  @if $size == 'tablet' {
+
+    // Handles "all" tablets...
+
+    @media only screen
+           and (min-width: 481px)
+           and (max-width : 880px) {
+      @content;
+    }
+
+  }
+
+  /**
+   * Desktop
+   */
+
+  @if $size == 'desktop' {
+    @media only screen
+           and (min-width : 880px) {
+      @content;
+    }
+  }
+
+  @if $size == 'desktop-l' {
+    @media only screen
+           and (min-width : 960px) {
+      @content;
+    }
+  }
+
+   @if $size == 'desktop-xl' {
+    @media only screen
+           and (min-width : 1060px) {
+      @content;
+    }
+  }
+
+  /**
+   * Retina Display
+   */
+
+  @if $size == 'retina' {
+    @media only screen and (-webkit-min-device-pixel-ratio : 1.5),
+           only screen and (min-device-pixel-ratio : 1.5) {
+      @content;
+    }
+  }
+}
+
+/**
+ * Any IE
+ */
+
+@mixin ie-fix {
+  .ie & {
+    @content;
+  }
+}
+
+/**
+ * IE7
+ */
+
+@mixin lt-ie8-fix {
+  .lt-ie8 & {
+    @content;
+  }
+}
+
+/**
+ * IE8
+ */
+
+@mixin lt-ie9-fix {
+  .lt-ie9 & {
+    @content;
+  }
+}
