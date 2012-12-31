@@ -181,7 +181,7 @@ h1 span {
 Header
  */
 
-body > header{
+header[role="banner"]{
 
   h1{
     text-align: left;
@@ -192,11 +192,11 @@ body {
   @extend %image-section;
   
   @include respond-to('desktop'){
-    @include background(image-url('trees4.jpg'));
+    @include background(image-url('trees5.jpg'));
   }
 
   @include respond-to('tablet'){
-    @include background(image-url('trees4.jpg'));
+    @include background(image-url('trees5.jpg'));
   }
 
   @include respond-to('mobile'){
@@ -208,12 +208,11 @@ body {
 
 #home {
 
-  
   height: 100%;
   text-align: left;
 
   .hero-unit{
-    color: white;
+    color: $primary-color;
     @include background(image-url('me.jpg'));
     padding: 30px;
     padding-top: 100px;
@@ -231,7 +230,7 @@ body {
   @include respond-to('tablet'){
     .hero-unit{
 
-      color: white;
+      color: $primary-color;
       @include background(image-url('me.jpg'));
       padding: 30px;
       padding-top: 80px;
@@ -250,7 +249,7 @@ body {
   @include respond-to('mobile'){
     .hero-unit{
 
-      color: white;
+      color: $primary-color;
       @include background(image-url('me.jpg'));
       padding: 30px;
       padding-top: 80px;

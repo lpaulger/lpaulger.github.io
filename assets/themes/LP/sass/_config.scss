@@ -12,19 +12,19 @@ $h4: 16pt;
 
 // Colors
 
-$primary-color: #ffe200;
+$primary-color: #08C;
 $black: #333333;
 $gray: #CCC;
-$headers: #000;
-$body-text: #000;
-$page-header: #000;
+$headers: $black;
+$body-text: $black;
+$page-header: $black;
 $page-header-links: #FFF;
 $page-header-link-active: $primary-color;
 $section-header: #ccc;
 
 $portfolio-background-color: #CCC;
 
-$page-footer: #000;
+$page-footer: $black;
 $form-outline-color: #BCC942;
 $action-button-background: $primary-color;
 

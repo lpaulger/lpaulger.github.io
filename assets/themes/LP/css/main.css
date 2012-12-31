@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Compass';
+  src: url("../fonts/Compass.ttf"), url("../fonts/compass.svg");
+}
+
+@font-face {
+  font-family: 'Compass-Light';
+  src: url("../fonts/CompassLight.ttf");
+}
+
 /**
  * Any IE
  */
@@ -607,7 +617,7 @@ a:hover {
 /* line 64, ../sass/main.scss */
 h1, h2, h3, h4, h5, h6, [role="navigation"] {
   margin: 0;
-  color: black;
+  color: #333333;
 }
 
 /* line 69, ../sass/main.scss */
@@ -796,7 +806,7 @@ h1 span {
 Header
  */
 /* line 186, ../sass/main.scss */
-body > header h1 {
+header[role="banner"] h1 {
   text-align: left;
 }
 
@@ -851,13 +861,13 @@ body {
 @media only screen and (min-width: 880px) {
   /* line 191, ../sass/main.scss */
   body {
-    background: url('../../../img/trees4.jpg?1356962757');
+    background: url('../../../img/trees5.jpg?1356969836');
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 880px) {
   /* line 191, ../sass/main.scss */
   body {
-    background: url('../../../img/trees4.jpg?1356962757');
+    background: url('../../../img/trees5.jpg?1356969836');
   }
 }
 @media only screen and (max-width: 480px) {
@@ -932,38 +942,38 @@ body {
    * Retina Display
    */
 }
-/* line 215, ../sass/main.scss */
+/* line 214, ../sass/main.scss */
 #home .hero-unit {
-  color: white;
+  color: #0088cc;
   background: url('../../../img/me.jpg?1356961152');
   padding: 30px;
   padding-top: 100px;
 }
-/* line 221, ../sass/main.scss */
+/* line 220, ../sass/main.scss */
 #home .hero-unit h1 {
   font-size: 3.0em;
   line-height: 1.5em;
 }
-/* line 225, ../sass/main.scss */
+/* line 224, ../sass/main.scss */
 #home .hero-unit p {
   font-size: 0.90909em;
   line-height: 2.475em;
   margin: 0;
 }
 @media only screen and (min-width: 481px) and (max-width: 880px) {
-  /* line 232, ../sass/main.scss */
+  /* line 231, ../sass/main.scss */
   #home .hero-unit {
-    color: white;
+    color: #0088cc;
     background: url('../../../img/me.jpg?1356961152');
     padding: 30px;
     padding-top: 80px;
   }
-  /* line 239, ../sass/main.scss */
+  /* line 238, ../sass/main.scss */
   #home .hero-unit h1 {
     font-size: 1.5em;
     line-height: 2.0em;
   }
-  /* line 243, ../sass/main.scss */
+  /* line 242, ../sass/main.scss */
   #home .hero-unit p {
     font-size: 0.90909em;
     line-height: 2.475em;
@@ -971,26 +981,26 @@ body {
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 251, ../sass/main.scss */
+  /* line 250, ../sass/main.scss */
   #home .hero-unit {
-    color: white;
+    color: #0088cc;
     background: url('../../../img/me.jpg?1356961152');
     padding: 30px;
     padding-top: 80px;
   }
-  /* line 258, ../sass/main.scss */
+  /* line 257, ../sass/main.scss */
   #home .hero-unit h1 {
     font-size: 1.5em;
     line-height: 2.0em;
   }
-  /* line 262, ../sass/main.scss */
+  /* line 261, ../sass/main.scss */
   #home .hero-unit p {
     font-size: 0.90909em;
     line-height: 2.475em;
     margin: 0;
   }
 }
-/* line 269, ../sass/main.scss */
+/* line 268, ../sass/main.scss */
 #home .social-links li a {
   font-size: 1.5em;
   line-height: 2.0em;
@@ -1014,7 +1024,7 @@ body {
   }
 }
 
-/* line 284, ../sass/main.scss */
+/* line 283, ../sass/main.scss */
 #about .span6 {
   /**
    * Smartphones
@@ -1048,7 +1058,7 @@ body {
    */
 }
 @media only screen and (min-width: 880px) {
-  /* line 284, ../sass/main.scss */
+  /* line 283, ../sass/main.scss */
   #about .span6 {
     width: 49.15254%;
     float: right;
@@ -1058,7 +1068,7 @@ body {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 880px) {
-  /* line 284, ../sass/main.scss */
+  /* line 283, ../sass/main.scss */
   #about .span6 {
     width: 49.15254%;
     float: right;
@@ -1067,7 +1077,7 @@ body {
     display: inline;
   }
 }
-/* line 293, ../sass/main.scss */
+/* line 292, ../sass/main.scss */
 #about .span6:first-child {
   /**
    * Smartphones
@@ -1101,7 +1111,7 @@ body {
    */
 }
 @media only screen and (min-width: 880px) {
-  /* line 293, ../sass/main.scss */
+  /* line 292, ../sass/main.scss */
   #about .span6:first-child {
     width: 49.15254%;
     float: left;
@@ -1110,7 +1120,7 @@ body {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 880px) {
-  /* line 293, ../sass/main.scss */
+  /* line 292, ../sass/main.scss */
   #about .span6:first-child {
     width: 49.15254%;
     float: left;
@@ -1118,17 +1128,17 @@ body {
     display: inline;
   }
 }
-/* line 304, ../sass/main.scss */
+/* line 303, ../sass/main.scss */
 #about figure {
   clear: both;
 }
-/* line 305, ../sass/main.scss */
+/* line 304, ../sass/main.scss */
 #about figure .thumbnail-container {
   float: left;
   padding: 10px;
 }
 
-/* line 314, ../sass/main.scss */
+/* line 313, ../sass/main.scss */
 [role="main"] aside {
   /**
    * Smartphones
@@ -1163,7 +1173,7 @@ body {
   text-align: left;
 }
 @media only screen and (min-width: 880px) {
-  /* line 314, ../sass/main.scss */
+  /* line 313, ../sass/main.scss */
   [role="main"] aside {
     width: 49.15254%;
     float: right;
@@ -1173,7 +1183,7 @@ body {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 880px) {
-  /* line 314, ../sass/main.scss */
+  /* line 313, ../sass/main.scss */
   [role="main"] aside {
     width: 49.15254%;
     float: right;
@@ -1183,12 +1193,12 @@ body {
   }
 }
 
-/* line 329, ../sass/main.scss */
+/* line 328, ../sass/main.scss */
 footer {
   clear: both;
 }
 
-/* line 335, ../sass/main.scss */
+/* line 334, ../sass/main.scss */
 body {
   background-position: left center;
   background-repeat: no-repeat;
