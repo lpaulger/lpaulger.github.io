@@ -235,7 +235,7 @@ body {
     }
   }
 
-  @include respond-to('tablet'){
+  @include respond-to('tablet') {
     .hero-unit{
 
       color: $primary-color;
