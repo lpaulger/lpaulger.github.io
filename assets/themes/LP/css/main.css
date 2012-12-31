@@ -666,7 +666,12 @@ body > header h1 {
   text-align: left;
 }
 
-/* line 116, ../sass/main.scss */
+/* line 114, ../sass/main.scss */
+body {
+  background: url('../../../img/trees4.jpg?1356962757');
+}
+
+/* line 121, ../sass/main.scss */
 #home {
   width: 49.15254%;
   float: left;
@@ -675,17 +680,51 @@ body > header h1 {
   height: 100%;
   text-align: left;
 }
-/* line 121, ../sass/main.scss */
+/* line 127, ../sass/main.scss */
 #home .hero-unit {
+  color: white;
+  background: url('../../../img/me.jpg?1356961152');
   padding: 30px;
+  padding-top: 100px;
 }
-/* line 124, ../sass/main.scss */
+/* line 133, ../sass/main.scss */
 #home .hero-unit h1 {
   font-size: 3.0em;
   line-height: 1.5em;
 }
+/* line 137, ../sass/main.scss */
+#home .hero-unit p {
+  font-size: 0.90909em;
+  line-height: 2.475em;
+  margin: 0;
+}
 
-/* line 130, ../sass/main.scss */
+/* line 146, ../sass/main.scss */
+#about .span6 {
+  width: 49.15254%;
+  float: right;
+  margin-right: 0;
+  #margin-left: -1em;
+  display: inline;
+}
+/* line 149, ../sass/main.scss */
+#about .span6:first-child {
+  width: 49.15254%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+}
+/* line 154, ../sass/main.scss */
+#about figure {
+  clear: both;
+}
+/* line 155, ../sass/main.scss */
+#about figure .thumbnail-container {
+  float: left;
+  padding: 10px;
+}
+
+/* line 164, ../sass/main.scss */
 [role="main"] aside {
   width: 49.15254%;
   float: right;
@@ -695,7 +734,23 @@ body > header h1 {
   text-align: left;
 }
 
-/* line 139, ../sass/main.scss */
+/* line 173, ../sass/main.scss */
 footer {
   clear: both;
+}
+
+/* line 179, ../sass/main.scss */
+body {
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+/* line 111, ../sass/_respond.scss */
+.lt-ie9 body {
+  background-image: none;
+  border: none;
 }

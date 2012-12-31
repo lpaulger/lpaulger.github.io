@@ -108,22 +108,56 @@ body > header{
 
   h1{
     text-align: left;
-  } 
+  }
+}
+
+body {
+  @extend %image-section;
+  @include background(image-url('trees4.jpg'));
 }
 
 // Sections
 
 #home {
+
   @include span-columns(6, 12);
   height: 100%;
   text-align: left;
 
   .hero-unit{
+    color: white;
+    @include background(image-url('me.jpg'));
     padding: 30px;
+    padding-top: 100px;
 
     h1 {
       @include adjust-font-size-to($h2);
     }
+
+    p {
+      @include adjust-font-size-to($base-font-size/1.1, 1.5);
+      margin: 0;
+    }
+  }
+}
+
+
+#about {
+  .span6 {
+    @include span-columns(6 omega, 12);
+
+    &:first-child {
+      @include span-columns(6, 12);
+    }
+  }
+
+  figure {
+    .thumbnail-container {
+      float: left;
+      padding: 10px;
+    }
+
+    clear: both;
   }
 }
 
@@ -138,4 +172,18 @@ body > header{
 
 footer {
   clear: both;
+}
+
+
+
+%image-section {
+  background-position: left center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  @include background-size(cover);
+
+  @include lt-ie9-fix {
+    background-image: none;
+    border: none;
+  }
 }
