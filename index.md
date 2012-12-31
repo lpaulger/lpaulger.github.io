@@ -32,6 +32,4 @@ title: Welcome!
   {% assign posts = site.posts %} {% assign listing_limit = 3 %} {% include post-listing.html %}
 </aside>
 
-
-
-
+<span>test!</span>
