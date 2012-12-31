@@ -877,7 +877,15 @@ body {
   }
 }
 
-/* line 209, ../sass/main.scss */
+/* line 207, ../sass/main.scss */
+[role="main"] header h1:first-child {
+  background-color: #DDD;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
+/* line 216, ../sass/main.scss */
 #home {
   height: 100%;
   text-align: left;
@@ -942,38 +950,39 @@ body {
    * Retina Display
    */
 }
-/* line 214, ../sass/main.scss */
+/* line 221, ../sass/main.scss */
 #home .hero-unit {
   color: #0088cc;
   background: url('../../../img/me.jpg?1356961152');
   padding: 30px;
-  padding-top: 100px;
+  padding-top: 129px;
+  padding-bottom: 0px;
 }
-/* line 220, ../sass/main.scss */
+/* line 228, ../sass/main.scss */
 #home .hero-unit h1 {
   font-size: 3.0em;
   line-height: 1.5em;
 }
-/* line 224, ../sass/main.scss */
+/* line 232, ../sass/main.scss */
 #home .hero-unit p {
   font-size: 0.90909em;
   line-height: 2.475em;
   margin: 0;
 }
 @media only screen and (min-width: 481px) and (max-width: 880px) {
-  /* line 231, ../sass/main.scss */
+  /* line 239, ../sass/main.scss */
   #home .hero-unit {
     color: #0088cc;
     background: url('../../../img/me.jpg?1356961152');
     padding: 30px;
     padding-top: 80px;
   }
-  /* line 238, ../sass/main.scss */
+  /* line 246, ../sass/main.scss */
   #home .hero-unit h1 {
     font-size: 1.5em;
     line-height: 2.0em;
   }
-  /* line 242, ../sass/main.scss */
+  /* line 250, ../sass/main.scss */
   #home .hero-unit p {
     font-size: 0.90909em;
     line-height: 2.475em;
@@ -981,32 +990,32 @@ body {
   }
 }
 @media only screen and (max-width: 480px) {
-  /* line 250, ../sass/main.scss */
+  /* line 258, ../sass/main.scss */
   #home .hero-unit {
     color: #0088cc;
     background: url('../../../img/me.jpg?1356961152');
     padding: 30px;
     padding-top: 80px;
   }
-  /* line 257, ../sass/main.scss */
+  /* line 265, ../sass/main.scss */
   #home .hero-unit h1 {
     font-size: 1.5em;
     line-height: 2.0em;
   }
-  /* line 261, ../sass/main.scss */
+  /* line 269, ../sass/main.scss */
   #home .hero-unit p {
     font-size: 0.90909em;
     line-height: 2.475em;
     margin: 0;
   }
 }
-/* line 268, ../sass/main.scss */
+/* line 276, ../sass/main.scss */
 #home .social-links li a {
   font-size: 1.5em;
   line-height: 2.0em;
 }
 @media only screen and (min-width: 880px) {
-  /* line 209, ../sass/main.scss */
+  /* line 216, ../sass/main.scss */
   #home {
     width: 49.15254%;
     float: left;
@@ -1015,7 +1024,7 @@ body {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 880px) {
-  /* line 209, ../sass/main.scss */
+  /* line 216, ../sass/main.scss */
   #home {
     width: 49.15254%;
     float: left;
@@ -1024,7 +1033,7 @@ body {
   }
 }
 
-/* line 283, ../sass/main.scss */
+/* line 291, ../sass/main.scss */
 #about .span6 {
   /**
    * Smartphones
@@ -1058,7 +1067,7 @@ body {
    */
 }
 @media only screen and (min-width: 880px) {
-  /* line 283, ../sass/main.scss */
+  /* line 291, ../sass/main.scss */
   #about .span6 {
     width: 49.15254%;
     float: right;
@@ -1068,7 +1077,7 @@ body {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 880px) {
-  /* line 283, ../sass/main.scss */
+  /* line 291, ../sass/main.scss */
   #about .span6 {
     width: 49.15254%;
     float: right;
@@ -1077,7 +1086,7 @@ body {
     display: inline;
   }
 }
-/* line 292, ../sass/main.scss */
+/* line 300, ../sass/main.scss */
 #about .span6:first-child {
   /**
    * Smartphones
@@ -1111,7 +1120,7 @@ body {
    */
 }
 @media only screen and (min-width: 880px) {
-  /* line 292, ../sass/main.scss */
+  /* line 300, ../sass/main.scss */
   #about .span6:first-child {
     width: 49.15254%;
     float: left;
@@ -1120,7 +1129,7 @@ body {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 880px) {
-  /* line 292, ../sass/main.scss */
+  /* line 300, ../sass/main.scss */
   #about .span6:first-child {
     width: 49.15254%;
     float: left;
@@ -1128,17 +1137,17 @@ body {
     display: inline;
   }
 }
-/* line 303, ../sass/main.scss */
+/* line 311, ../sass/main.scss */
 #about figure {
   clear: both;
 }
-/* line 304, ../sass/main.scss */
+/* line 312, ../sass/main.scss */
 #about figure .thumbnail-container {
   float: left;
   padding: 10px;
 }
 
-/* line 313, ../sass/main.scss */
+/* line 321, ../sass/main.scss */
 [role="main"] aside {
   /**
    * Smartphones
@@ -1173,7 +1182,7 @@ body {
   text-align: left;
 }
 @media only screen and (min-width: 880px) {
-  /* line 313, ../sass/main.scss */
+  /* line 321, ../sass/main.scss */
   [role="main"] aside {
     width: 49.15254%;
     float: right;
@@ -1183,7 +1192,7 @@ body {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 880px) {
-  /* line 313, ../sass/main.scss */
+  /* line 321, ../sass/main.scss */
   [role="main"] aside {
     width: 49.15254%;
     float: right;
@@ -1193,12 +1202,12 @@ body {
   }
 }
 
-/* line 328, ../sass/main.scss */
+/* line 336, ../sass/main.scss */
 footer {
   clear: both;
 }
 
-/* line 334, ../sass/main.scss */
+/* line 342, ../sass/main.scss */
 body {
   background-position: left center;
   background-repeat: no-repeat;

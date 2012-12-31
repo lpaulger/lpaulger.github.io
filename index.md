@@ -1,7 +1,6 @@
 ---
 layout: page
-title: LP Projects
-tagline: programming(one_line_at_a_time);
+title: Welcome!
 ---
 {% include JB/setup %}
 

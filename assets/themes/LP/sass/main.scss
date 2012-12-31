@@ -204,6 +204,13 @@ body {
   }
 }
 
+[role="main"] header h1:first-child {
+  background-color: #DDD;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 10px;
+}
+
 // Sections
 
 #home {
@@ -215,7 +222,8 @@ body {
     color: $primary-color;
     @include background(image-url('me.jpg'));
     padding: 30px;
-    padding-top: 100px;
+    padding-top: 129px;
+    padding-bottom: 0px;
 
     h1 {
       @include adjust-font-size-to($h2);
