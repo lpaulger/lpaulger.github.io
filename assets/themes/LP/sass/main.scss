@@ -100,6 +100,83 @@ h1 span {
   color: #999;
 }
 
+
+@include respond-to('tablet'){
+  [role="navigation"] a{
+    text-align: center;
+    @include adjust-font-size-to($nav/1.5);
+  }
+
+  h1 {
+    margin: 0;
+    @include adjust-font-size-to($h1/1.5);
+  }
+
+  h2 {
+    @include adjust-font-size-to($h2);
+  }
+
+  h3 {
+    @include adjust-font-size-to($h3);
+  }
+
+  h4 {
+    @include adjust-font-size-to($h4);
+  }
+
+  p {
+    margin: 0;
+    @include adjust-font-size-to($base-font-size, 1.5);
+    @include trailer;
+  }
+
+  h1 span {
+    @include adjust-font-size-to($base-font-size/2, 1.5);
+    vertical-align: middle;
+    color: #999;
+  }
+}
+
+@include respond-to('mobile'){
+  [role="navigation"] a{
+    text-align: center;
+    @include adjust-font-size-to($nav/3);
+  }
+
+  h1 {
+    margin: 0;
+    @include adjust-font-size-to($h1/3);
+  }
+
+  h2 {
+    @include adjust-font-size-to($h2/2);
+  }
+
+  h3 {
+    @include adjust-font-size-to($h3);
+  }
+
+  h4 {
+    @include adjust-font-size-to($h4);
+  }
+
+  p {
+    margin: 0;
+    @include adjust-font-size-to($base-font-size, 1.5);
+    @include trailer;
+  }
+
+  h1 span {
+    @include adjust-font-size-to($base-font-size/2, 1.5);
+    vertical-align: middle;
+    color: #999;
+  }
+
+  code {
+    @include adjust-font-size-to($base-font-size/1.7, 1.5);
+  }
+}
+
 /*
 Header
  */
@@ -113,14 +190,25 @@ body > header{
 
 body {
   @extend %image-section;
-  @include background(image-url('trees4.jpg'));
+  
+  @include respond-to('desktop'){
+    @include background(image-url('trees4.jpg'));
+  }
+
+  @include respond-to('tablet'){
+    @include background(image-url('trees4.jpg'));
+  }
+
+  @include respond-to('mobile'){
+    word-wrap:break-word;
+  }
 }
 
 // Sections
 
 #home {
 
-  @include span-columns(6, 12);
+  
   height: 100%;
   text-align: left;
 
@@ -139,15 +227,77 @@ body {
       margin: 0;
     }
   }
+
+  @include respond-to('tablet'){
+    .hero-unit{
+
+      color: white;
+      @include background(image-url('me.jpg'));
+      padding: 30px;
+      padding-top: 80px;
+
+      h1 {
+        @include adjust-font-size-to($h2/2);
+      }
+
+      p {
+        @include adjust-font-size-to($base-font-size/1.1, 1.5);
+        margin: 0;
+      }
+    }
+  }
+
+  @include respond-to('mobile'){
+    .hero-unit{
+
+      color: white;
+      @include background(image-url('me.jpg'));
+      padding: 30px;
+      padding-top: 80px;
+
+      h1 {
+        @include adjust-font-size-to($h2/2);
+      }
+
+      p {
+        @include adjust-font-size-to($base-font-size/1.1, 1.5);
+        margin: 0;
+      }
+    }
+  }
+
+  .social-links li a {
+    @include adjust-font-size-to($h3);
+  }
+
+  @include respond-to('desktop') {
+    @include span-columns(6, 12);
+  }
+
+  @include respond-to('tablet') {
+    @include span-columns(6, 12);
+  }
 }
 
 
 #about {
   .span6 {
-    @include span-columns(6 omega, 12);
+    @include respond-to('desktop') {
+      @include span-columns(6 omega, 12);
+    }
+
+    @include respond-to('tablet') {
+      @include span-columns(6 omega, 12);
+    }
 
     &:first-child {
-      @include span-columns(6, 12);
+      @include respond-to('desktop') {
+        @include span-columns(6, 12);
+      }
+
+      @include respond-to('tablet') {
+        @include span-columns(6, 12);
+      }
     }
   }
 
@@ -162,7 +312,13 @@ body {
 }
 
 [role="main"] aside {
-  @include span-columns(6 omega, 12);
+  @include respond-to('desktop') {
+    @include span-columns(6 omega, 12);
+  }
+
+  @include respond-to('tablet') {
+    @include span-columns(6 omega, 12);
+  }
   text-align: left;
 }
 
