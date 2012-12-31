@@ -31,5 +31,3 @@ title: Welcome!
   <p>Obviously this isn't very full right now. Lets hope that it fills up quickly as I learn about front end development and design techniques!</p>
   {% assign posts = site.posts %} {% assign listing_limit = 3 %} {% include post-listing.html %}
 </aside>
-
-<span>test!</span>
