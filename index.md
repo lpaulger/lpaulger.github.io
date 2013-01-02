@@ -27,6 +27,8 @@ title: Welcome!
 </section>
 
 <aside>
+  <h2>Recent Tweets</h2>
+  {% include koTemplates/twitterPosts.html %}
   <h2>Recent Posts</h2>
   <p>Obviously this isn't very full right now. Lets hope that it fills up quickly as I learn about front end development and design techniques!</p>
   {% assign posts = site.posts %} {% assign listing_limit = 3 %} {% include post-listing.html %}

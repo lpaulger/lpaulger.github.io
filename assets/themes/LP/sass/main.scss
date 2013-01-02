@@ -218,7 +218,7 @@ body {
   height: 100%;
   text-align: left;
 
-  .hero-unit{
+  .hero-unit {
     color: $primary-color;
     @include background(image-url('me.jpg'));
     padding: 30px;
@@ -285,6 +285,10 @@ body {
     @include span-columns(6, 12);
   }
 }
+
+.tweets {
+    display: none;
+  }
 
 
 #about {

@@ -1,21 +1,24 @@
-(function(){
-  /**
-   * Simple javascript API class that handles requests to twitter API
-   * @param {object} config holds any configurable values used within the api
-   */
-  function init(config){
-    var self = this;
-    self.twitterApi = new window.App.TwitterApi(config);
+/*global console:false moment:false */
 
-    self.twitterApi.getRecentPosts({
-      count: config.twitter.recentCount
-    }).done(function(data){
-      console.log(data);
-    }).fail(function(e){
-      console.log('error: ');
-      console.log(data);
-    });
+(function() {
+  
+  /**
+   * Main application class that runs everything
+   */
+  function App() {
+    var self = this;
+
+    /**
+     * simple init method to do everything that matters.
+     * @param  {object} config holds any configurable settings
+     */
+    self.init = function(config){
+      var options = {};
+      options.twitterApi = new window.TwitterApi(config);
+      options.config = config;
+      ko.applyBindings(new window.LP.TwitterListViewModel(options));
+    };
   }
 
-  window.App.init = init;
+  window.LP.App = App;
 }());

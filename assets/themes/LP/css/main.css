@@ -1033,7 +1033,12 @@ body {
   }
 }
 
-/* line 291, ../sass/main.scss */
+/* line 289, ../sass/main.scss */
+.tweets {
+  display: none;
+}
+
+/* line 295, ../sass/main.scss */
 #about .span6 {
   /**
    * Smartphones
@@ -1067,7 +1072,7 @@ body {
    */
 }
 @media only screen and (min-width: 880px) {
-  /* line 291, ../sass/main.scss */
+  /* line 295, ../sass/main.scss */
   #about .span6 {
     width: 49.15254%;
     float: right;
@@ -1077,7 +1082,7 @@ body {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 880px) {
-  /* line 291, ../sass/main.scss */
+  /* line 295, ../sass/main.scss */
   #about .span6 {
     width: 49.15254%;
     float: right;
@@ -1086,7 +1091,7 @@ body {
     display: inline;
   }
 }
-/* line 300, ../sass/main.scss */
+/* line 304, ../sass/main.scss */
 #about .span6:first-child {
   /**
    * Smartphones
@@ -1120,7 +1125,7 @@ body {
    */
 }
 @media only screen and (min-width: 880px) {
-  /* line 300, ../sass/main.scss */
+  /* line 304, ../sass/main.scss */
   #about .span6:first-child {
     width: 49.15254%;
     float: left;
@@ -1129,7 +1134,7 @@ body {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 880px) {
-  /* line 300, ../sass/main.scss */
+  /* line 304, ../sass/main.scss */
   #about .span6:first-child {
     width: 49.15254%;
     float: left;
@@ -1137,17 +1142,17 @@ body {
     display: inline;
   }
 }
-/* line 311, ../sass/main.scss */
+/* line 315, ../sass/main.scss */
 #about figure {
   clear: both;
 }
-/* line 312, ../sass/main.scss */
+/* line 316, ../sass/main.scss */
 #about figure .thumbnail-container {
   float: left;
   padding: 10px;
 }
 
-/* line 321, ../sass/main.scss */
+/* line 325, ../sass/main.scss */
 [role="main"] aside {
   /**
    * Smartphones
@@ -1182,7 +1187,7 @@ body {
   text-align: left;
 }
 @media only screen and (min-width: 880px) {
-  /* line 321, ../sass/main.scss */
+  /* line 325, ../sass/main.scss */
   [role="main"] aside {
     width: 49.15254%;
     float: right;
@@ -1192,7 +1197,7 @@ body {
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 880px) {
-  /* line 321, ../sass/main.scss */
+  /* line 325, ../sass/main.scss */
   [role="main"] aside {
     width: 49.15254%;
     float: right;
@@ -1202,12 +1207,12 @@ body {
   }
 }
 
-/* line 336, ../sass/main.scss */
+/* line 340, ../sass/main.scss */
 footer {
   clear: both;
 }
 
-/* line 342, ../sass/main.scss */
+/* line 346, ../sass/main.scss */
 body {
   background-position: left center;
   background-repeat: no-repeat;

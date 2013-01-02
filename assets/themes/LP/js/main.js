@@ -5,7 +5,7 @@ $(document).ready(function(){
       username : 'lmpaulger',
       recentCount : 4
     }
-  }
+  };
   
-  window.App.init(config);
+  new window.LP.App().init(config);
 });

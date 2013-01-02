@@ -27,8 +27,8 @@
         dataType: "jsonp",
         timeout: 15000
       });
-    }
+    };
   }
 
-  window.App.TwitterApi = TwitterApi;
+  window.TwitterApi = TwitterApi;
 }());

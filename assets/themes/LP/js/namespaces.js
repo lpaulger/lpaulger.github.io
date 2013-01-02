@@ -1,2 +1,3 @@
-window.App = {
+window.LP = {
+  App : {}
 };
