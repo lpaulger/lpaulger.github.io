@@ -1,9 +1,10 @@
-(function(){
+(function() {
   /**
    * Simple javascript API class that handles requests to twitter API
    * @param {object} config holds any configurable values used within the api
    */
-  function TwitterApi(config){
+
+  function TwitterApi(config) {
     var self = this;
 
     self.url = config.twitter.baseUrl;
@@ -11,15 +12,20 @@
 
     /**
      * returns most recent user tweets
-     * @return {[type]}
+     * @return {Tweets}
      */
-    self.getRecentPosts = function(options){
+    self.getRecentPosts = function(options) {
+
       var count = options.count;
-      var url = self.url + '/statuses/user_timeline.json?screen_name=' + self.username + '&count=' + count + '&callback=?'
+
       return $.ajax({
-        url: url,
-        dataType : "json",  
-        timeout:15000
+        url: self.url + '/statuses/user_timeline.json?',
+        data: {
+          'screen_name': self.username,
+          'count': count
+        },
+        dataType: "jsonp",
+        timeout: 15000
       });
     }
   }

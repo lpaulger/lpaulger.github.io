@@ -8,7 +8,7 @@
     self.twitterApi = new window.App.TwitterApi(config);
 
     self.twitterApi.getRecentPosts({
-      count: 4
+      count: config.twitter.recentCount
     }).done(function(data){
       console.log(data);
     }).fail(function(e){
