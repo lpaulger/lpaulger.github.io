@@ -2,7 +2,7 @@
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:categories/:year/:month/:day/:title 
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", ".scss", "*/config.rb"]
+exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", ".scss", "*/config.rb", "JSCover", "webhook.js"]
 auto: true
 pygments: true
 
@@ -10,7 +10,7 @@ pygments: true
 # so be sure to set them if your theme uses them.
 #
 title : LP Projects
-tagline: A place for my thoughts to flow into the wild
+tagline: programming(one_line_at_a_time);
 author :
   name : Lucas Paulger
   email : lucas@lucaspaulger.com
