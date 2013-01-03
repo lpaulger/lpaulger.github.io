@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!-- saved from url=(0060)http://localhost:8080/jscoverage.html?/_site/SpecRunner.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7">
+<title>JSCover</title>
+<link rel="stylesheet" type="text/css" href="./JSCover_files/jscoverage-highlight.css">
+<link rel="stylesheet" type="text/css" href="./JSCover_files/jscoverage.css">
+<!--[if IE]>
+<link rel="stylesheet" type="text/css" href="jscoverage-ie.css">
+<![endif]-->
+<script type="text/javascript" src="./JSCover_files/jscoverage.js"></script>
+<style type="text/css"></style></head>
+
+<body onload="jscoverage_body_load();" onresize="jscoverage_body_resize();">
+<div id="mainDiv">
+<div id="headingDiv">
+<h1>JSCover</h1>
+<div class="ProgressBar" id="progressBar" style="visibility: hidden;"><span class="ProgressPercentage">100%</span><div class="ProgressGraph"><div class="ProgressCovered" style="width: 100px;"></div></div></div>
+<span id="progressLabel" style="visibility: hidden;"></span>
+</div>
+
+<div id="tabs" class="Tabs">
+  <div id="browserTab" class="selected" style=""><img src="./JSCover_files/jscoverage-throbber.gif" alt=""> Browser <img src="./JSCover_files/jscoverage-throbber.gif" alt=""></div>
+  <div id="summaryTab" class="" style=""><img id="summaryThrobber" src="./JSCover_files/jscoverage-throbber.gif" alt=""> Summary <img src="./JSCover_files/jscoverage-throbber.gif" alt=""></div>
+  <div id="sourceTab" class="disabled" style=""><img src="./JSCover_files/jscoverage-throbber.gif" alt=""> Source <img src="./JSCover_files/jscoverage-throbber.gif" alt=""></div>
+  <div id="storeTab" class="" style=""><img id="storeThrobber" src="./JSCover_files/jscoverage-throbber.gif" alt=""> Store <img src="./JSCover_files/jscoverage-throbber.gif" alt=""></div>
+  <div id="aboutTab" class="" style=""><img src="./JSCover_files/jscoverage-throbber.gif" alt=""> About <img src="./JSCover_files/jscoverage-throbber.gif" alt=""></div>
+</div>
+<div id="tabPages" class="TabPages">
+  <div class="selected TabPage" id="browserTabPage">
+    <div id="locationDiv">
+    URL: <input id="location" type="text" size="70" onkeypress="jscoverage_input_keypress(event)">
+    <button id="openInFrameButton" onclick="jscoverage_openInFrameButton_click();" title="open URL in the iframe below [Enter]">Open in frame</button>
+    <button id="openInWindowButton" onclick="jscoverage_openInWindowButton_click();" title="open URL in a new window (or tab) [Shift+Enter]">Open in window</button>
+    </div>
+    <div id="iframeDiv">
+    <iframe id="browserIframe" name="browserIframe" onload="jscoverage_browser_load();"></iframe>
+    </div>
+  </div>
+  <div class="TabPage">
+    <input type="checkbox" id="checkbox" onclick="return jscoverage_checkbox_click();"> <label for="checkbox">Show missing statements column</label>
+    <div id="summaryDiv">
+    <div id="summaryErrorDiv"></div>
+    <table id="summaryTable">
+    <thead>
+    <tr id="headerRow">
+    <th class="leftColumn">File</th>
+    <th><abbr title="The total number of executable statements">Statements</abbr></th>
+    <th><abbr title="The number of statements actually executed">Executed</abbr></th>
+    <th><abbr title="The total number of branches">Branch Paths</abbr></th>
+    <th><abbr title="The number of branches covered">Branch Paths Covered</abbr></th>
+    <th><a href="javascript:jscoverage_recalculateSummaryTabBy('Coverage')"><abbr title="Number of executed statements as a percentage of total number of statements">Coverage</abbr></a></th>
+    <th><a href="javascript:jscoverage_recalculateSummaryTabBy('Branch')"><abbr title="Number of executed branch paths as a percentage of total number of branch paths">Branch</abbr></a></th>
+    </tr>
+    <tr id="summaryTotals">
+        <td class="leftColumn">
+            <span class="title">Total:</span>
+            <span>10</span>
+        </td>
+        <td class="numeric">1619</td>
+        <td class="numeric">898</td>
+        <td class="numeric">2524</td>
+        <td class="numeric">320</td>
+        <td class="coverage">
+            <div class="pctGraph">
+                <div class="covered" style="width: 55px;"></div>
+            </div>
+            <span id="summaryTotal" class="pct">55%</span>
+        </td>
+        <td class="coverage">
+            <div class="pctGraph">
+                <div class="covered" style="width: 12px;"></div>
+            </div>
+            <span id="branchSummaryTotal" class="pct">12%</span>
+        </td>
+    </tr>
+
+    </thead>
+    <tbody id="summaryTbody"><tr class="odd" id="row-/assets/themes/LP/js/jasmine-standalone-1.3.1/lib/jasmine-1.3.1/jasmine.js"><td class="leftColumn"><a href="http://localhost:8080/jscoverage.html?/_site/SpecRunner.html#">/assets/themes/LP/js/jasmine-standalone-1.3.1/lib/jasmine-1.3.1/jasmine.js</a></td><td class="numeric">1095</td><td class="numeric">596</td><td class="numeric">550</td><td class="numeric">108</td><td class="coverage"><div class="pctGraph"><div class="covered" style="width: 54px;"></div></div><span class="pct">54%</span></td><td class="coverage"><div class="pctGraph"><div class="covered" style="width: 19px;"></div></div><span class="pct">19%</span></td></tr><tr class="even" id="row-/assets/themes/LP/js/jasmine-standalone-1.3.1/lib/jasmine-1.3.1/jasmine-html.js"><td class="leftColumn"><a href="http://localhost:8080/jscoverage.html?/_site/SpecRunner.html#">/assets/themes/LP/js/jasmine-standalone-1.3.1/lib/jasmine-1.3.1/jasmine-html.js</a></td><td class="numeric">349</td><td class="numeric">191</td><td class="numeric">162</td><td class="numeric">53</td><td class="coverage"><div class="pctGraph"><div class="covered" style="width: 54px;"></div></div><span class="pct">54%</span></td><td class="coverage"><div class="pctGraph"><div class="covered" style="width: 32px;"></div></div><span class="pct">32%</span></td></tr><tr class="odd" id="row-/assets/themes/LP/js/knockout-2.2.0.js"><td class="leftColumn"><a href="http://localhost:8080/jscoverage.html?/_site/SpecRunner.html#">/assets/themes/LP/js/knockout-2.2.0.js</a></td><td class="numeric">80</td><td class="numeric">25</td><td class="numeric">1428</td><td class="numeric">68</td><td class="coverage"><div class="pctGraph"><div class="covered" style="width: 31px;"></div></div><span class="pct">31%</span></td><td class="coverage"><div class="pctGraph"><div class="covered" style="width: 4px;"></div></div><span class="pct">4%</span></td></tr><tr class="even" id="row-/assets/themes/LP/js/moment.min.js"><td class="leftColumn"><a href="http://localhost:8080/jscoverage.html?/_site/SpecRunner.html#">/assets/themes/LP/js/moment.min.js</a></td><td class="numeric">1</td><td class="numeric">1</td><td class="numeric">384</td><td class="numeric">91</td><td class="coverage"><div class="pctGraph"><div class="covered" style="width: 100px;"></div></div><span class="pct">100%</span></td><td class="coverage"><div class="pctGraph"><div class="covered" style="width: 23px;"></div></div><span class="pct">23%</span></td></tr><tr class="odd" id="row-/assets/themes/LP/js/String.extend.js"><td class="leftColumn"><a href="http://localhost:8080/jscoverage.html?/_site/SpecRunner.html#">/assets/themes/LP/js/String.extend.js</a></td><td class="numeric">11</td><td class="numeric">6</td><td class="numeric">0</td><td class="numeric">0</td><td class="coverage"><div class="pctGraph"><div class="covered" style="width: 54px;"></div></div><span class="pct">54%</span></td><td class="coverage"><div class="pctGraph"><div class="skipped"></div></div><span class="pct">N/A</span></td></tr><tr class="even" id="row-/assets/themes/LP/js/namespaces.js"><td class="leftColumn"><a href="http://localhost:8080/jscoverage.html?/_site/SpecRunner.html#">/assets/themes/LP/js/namespaces.js</a></td><td class="numeric">1</td><td class="numeric">1</td><td class="numeric">0</td><td class="numeric">0</td><td class="coverage"><div class="pctGraph"><div class="covered" style="width: 100px;"></div></div><span class="pct">100%</span></td><td class="coverage"><div class="pctGraph"><div class="skipped"></div></div><span class="pct">N/A</span></td></tr><tr class="odd" id="row-/assets/themes/LP/js/TwitterApi.js"><td class="leftColumn"><a href="http://localhost:8080/jscoverage.html?/_site/SpecRunner.html#">/assets/themes/LP/js/TwitterApi.js</a></td><td class="numeric">9</td><td class="numeric">7</td><td class="numeric">0</td><td class="numeric">0</td><td class="coverage"><div class="pctGraph"><div class="covered" style="width: 77px;"></div></div><span class="pct">77%</span></td><td class="coverage"><div class="pctGraph"><div class="skipped"></div></div><span class="pct">N/A</span></td></tr><tr class="even" id="row-/assets/themes/LP/js/TwitterListViewModel.js"><td class="leftColumn"><a href="http://localhost:8080/jscoverage.html?/_site/SpecRunner.html#">/assets/themes/LP/js/TwitterListViewModel.js</a></td><td class="numeric">18</td><td class="numeric">16</td><td class="numeric">0</td><td class="numeric">0</td><td class="coverage"><div class="pctGraph"><div class="covered" style="width: 88px;"></div></div><span class="pct">88%</span></td><td class="coverage"><div class="pctGraph"><div class="skipped"></div></div><span class="pct">N/A</span></td></tr><tr class="odd" id="row-/assets/themes/LP/js/jasmine-standalone-1.3.1/spec/TwitterApiSpec.js"><td class="leftColumn"><a href="http://localhost:8080/jscoverage.html?/_site/SpecRunner.html#">/assets/themes/LP/js/jasmine-standalone-1.3.1/spec/TwitterApiSpec.js</a></td><td class="numeric">38</td><td class="numeric">38</td><td class="numeric">0</td><td class="numeric">0</td><td class="coverage"><div class="pctGraph"><div class="covered" style="width: 100px;"></div></div><span class="pct">100%</span></td><td class="coverage"><div class="pctGraph"><div class="skipped"></div></div><span class="pct">N/A</span></td></tr><tr class="even" id="row-/assets/themes/LP/js/jasmine-standalone-1.3.1/spec/TwitterListViewModelSpec.js"><td class="leftColumn"><a href="http://localhost:8080/jscoverage.html?/_site/SpecRunner.html#">/assets/themes/LP/js/jasmine-standalone-1.3.1/spec/TwitterListViewModelSpec.js</a></td><td class="numeric">17</td><td class="numeric">17</td><td class="numeric">0</td><td class="numeric">0</td><td class="coverage"><div class="pctGraph"><div class="covered" style="width: 100px;"></div></div><span class="pct">100%</span></td><td class="coverage"><div class="pctGraph"><div class="skipped"></div></div><span class="pct">N/A</span></td></tr></tbody>
+    </table>
+    </div>
+  </div>
+  <div class="TabPage">
+    <div id="fileDiv"></div>
+    <div id="sourceDiv"></div>
+  </div>
+  <div class="TabPage" id="storeTabPage">
+    <button id="storeButton" onclick="jscoverage_storeButton_click();">Store Report</button>
+    <img id="storeImg" src="./JSCover_files/jscoverage-throbber.gif" alt="loading...">
+    <div id="storeDiv"></div>
+  </div>
+  <div class="TabPage">
+    <p>
+    This is version 0.2.0 of JSCover, a program that calculates code
+    coverage statistics for JavaScript.
+    </p>
+    <p>
+    See <a href="http://tntim96.github.com/JSCover">http://tntim96.github.com/JSCover</a> for more information.
+    </p>
+    <p>
+    Copyright © 2007, 2008, 2009, 2010 siliconforks.com
+    </p>
+  </div>
+</div>
+</div>
+
+
+<div id="window-resizer-tooltip" style="display: block;"><a href="http://localhost:8080/jscoverage.html?/_site/SpecRunner.html#" title="Edit settings" style="background-image: url(chrome-extension://kkelicaakdanhinjdeammmilcgefonfh/images/icon_19.png);"></a><span class="tooltipTitle">Window size: </span><span class="tooltipWidth" id="winWidth">1440</span> x <span class="tooltipHeight" id="winHeight">808</span><br><span class="tooltipTitle">Viewport size: </span><span class="tooltipWidth" id="vpWidth">1440</span> x <span class="tooltipHeight" id="vpHeight">669</span></div></body></html>
