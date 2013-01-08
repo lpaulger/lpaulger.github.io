@@ -1,11 +1,9 @@
-/*global console:false moment:false */
+/*global define:false */
 
-(function() {
-  
+define(["knockout", "TwitterApi", "TwitterListViewModel"], function(ko, TwitterApi, TwitterListViewModel) {
   /**
    * Main application class that runs everything
    */
-  function App() {
     var self = this;
 
     /**
@@ -14,11 +12,12 @@
      */
     self.init = function(config){
       var options = {};
-      options.twitterApi = new window.TwitterApi(config);
+      options.twitterApi = new TwitterApi(config);
       options.config = config;
-      ko.applyBindings(new window.LP.TwitterListViewModel(options));
+      ko.applyBindings(new TwitterListViewModel(options));
     };
-  }
 
-  window.LP.App = App;
-}());
+    return {
+      init : self.init
+    };
+});
