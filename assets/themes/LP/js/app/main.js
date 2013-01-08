@@ -13,7 +13,7 @@ require(["App"], function(App) {
     twitter : {
       baseUrl : 'https://api.twitter.com/1',
       username : 'lmpaulger',
-      recentCount : 5
+      recentCount : 3
     }
   };
   
