@@ -8,7 +8,7 @@ require.config({
   }
 });
 
-require(["App", "namespaces"], function(App) {
+require(["App"], function(App) {
     var config = {
     twitter : {
       baseUrl : 'https://api.twitter.com/1',

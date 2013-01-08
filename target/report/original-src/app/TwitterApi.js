@@ -1,9 +1,9 @@
-(function() {
+/*global define:false */
+define(['jquery'], function($){
   /**
    * Simple javascript API class that handles requests to twitter API
    * @param {object} config holds any configurable values used within the api
    */
-
   function TwitterApi(config) {
     var self = this;
 
@@ -30,5 +30,6 @@
     };
   }
 
-  window.TwitterApi = TwitterApi;
-}());
+  return TwitterApi;
+
+});

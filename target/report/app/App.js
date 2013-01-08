@@ -204,36 +204,33 @@ if (! _$jscoverage['app/App.js']) {
   _$jscoverage['app/App.js'] = {};
   _$jscoverage['app/App.js'].lineData = [];
   _$jscoverage['app/App.js'].lineData[3] = 0;
-  _$jscoverage['app/App.js'].lineData[8] = 0;
-  _$jscoverage['app/App.js'].lineData[9] = 0;
+  _$jscoverage['app/App.js'].lineData[7] = 0;
+  _$jscoverage['app/App.js'].lineData[13] = 0;
+  _$jscoverage['app/App.js'].lineData[14] = 0;
   _$jscoverage['app/App.js'].lineData[15] = 0;
   _$jscoverage['app/App.js'].lineData[16] = 0;
   _$jscoverage['app/App.js'].lineData[17] = 0;
-  _$jscoverage['app/App.js'].lineData[18] = 0;
-  _$jscoverage['app/App.js'].lineData[19] = 0;
-  _$jscoverage['app/App.js'].lineData[23] = 0;
+  _$jscoverage['app/App.js'].lineData[20] = 0;
 }
 if (! _$jscoverage['app/App.js'].branchData) {
   _$jscoverage['app/App.js'].branchData = [];
 }
 _$jscoverage['app/App.js'].lineData[3]++;
-(function() {
-  _$jscoverage['app/App.js'].lineData[8]++;
-  function App() {
-    _$jscoverage['app/App.js'].lineData[9]++;
-    var self = this;
-    _$jscoverage['app/App.js'].lineData[15]++;
-    self.init = function(config) {
-  _$jscoverage['app/App.js'].lineData[16]++;
+define(["knockout", "TwitterApi", "TwitterListViewModel"], function(ko, TwitterApi, TwitterListViewModel) {
+  _$jscoverage['app/App.js'].lineData[7]++;
+  var self = this;
+  _$jscoverage['app/App.js'].lineData[13]++;
+  self.init = function(config) {
+  _$jscoverage['app/App.js'].lineData[14]++;
   var options = {};
-  _$jscoverage['app/App.js'].lineData[17]++;
-  options.twitterApi = new window.TwitterApi(config);
-  _$jscoverage['app/App.js'].lineData[18]++;
+  _$jscoverage['app/App.js'].lineData[15]++;
+  options.twitterApi = new TwitterApi(config);
+  _$jscoverage['app/App.js'].lineData[16]++;
   options.config = config;
-  _$jscoverage['app/App.js'].lineData[19]++;
-  ko.applyBindings(new window.LP.TwitterListViewModel(options));
+  _$jscoverage['app/App.js'].lineData[17]++;
+  ko.applyBindings(new TwitterListViewModel(options));
 };
-  }
-  _$jscoverage['app/App.js'].lineData[23]++;
-  window.LP.App = App;
-}());
+  _$jscoverage['app/App.js'].lineData[20]++;
+  return {
+  init: self.init};
+});

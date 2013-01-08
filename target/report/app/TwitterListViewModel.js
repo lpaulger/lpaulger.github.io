@@ -203,69 +203,69 @@ if (! this._$jscoverage) {
 if (! _$jscoverage['app/TwitterListViewModel.js']) {
   _$jscoverage['app/TwitterListViewModel.js'] = {};
   _$jscoverage['app/TwitterListViewModel.js'].lineData = [];
+  _$jscoverage['app/TwitterListViewModel.js'].lineData[2] = 0;
   _$jscoverage['app/TwitterListViewModel.js'].lineData[3] = 0;
   _$jscoverage['app/TwitterListViewModel.js'].lineData[4] = 0;
   _$jscoverage['app/TwitterListViewModel.js'].lineData[5] = 0;
   _$jscoverage['app/TwitterListViewModel.js'].lineData[6] = 0;
-  _$jscoverage['app/TwitterListViewModel.js'].lineData[7] = 0;
-  _$jscoverage['app/TwitterListViewModel.js'].lineData[9] = 0;
-  _$jscoverage['app/TwitterListViewModel.js'].lineData[14] = 0;
+  _$jscoverage['app/TwitterListViewModel.js'].lineData[8] = 0;
+  _$jscoverage['app/TwitterListViewModel.js'].lineData[13] = 0;
+  _$jscoverage['app/TwitterListViewModel.js'].lineData[17] = 0;
   _$jscoverage['app/TwitterListViewModel.js'].lineData[18] = 0;
   _$jscoverage['app/TwitterListViewModel.js'].lineData[19] = 0;
   _$jscoverage['app/TwitterListViewModel.js'].lineData[20] = 0;
   _$jscoverage['app/TwitterListViewModel.js'].lineData[21] = 0;
-  _$jscoverage['app/TwitterListViewModel.js'].lineData[22] = 0;
-  _$jscoverage['app/TwitterListViewModel.js'].lineData[24] = 0;
+  _$jscoverage['app/TwitterListViewModel.js'].lineData[23] = 0;
+  _$jscoverage['app/TwitterListViewModel.js'].lineData[25] = 0;
   _$jscoverage['app/TwitterListViewModel.js'].lineData[26] = 0;
   _$jscoverage['app/TwitterListViewModel.js'].lineData[27] = 0;
   _$jscoverage['app/TwitterListViewModel.js'].lineData[28] = 0;
-  _$jscoverage['app/TwitterListViewModel.js'].lineData[29] = 0;
-  _$jscoverage['app/TwitterListViewModel.js'].lineData[34] = 0;
+  _$jscoverage['app/TwitterListViewModel.js'].lineData[33] = 0;
 }
 if (! _$jscoverage['app/TwitterListViewModel.js'].branchData) {
   _$jscoverage['app/TwitterListViewModel.js'].branchData = [];
 }
-_$jscoverage['app/TwitterListViewModel.js'].lineData[3]++;
-(function() {
-  _$jscoverage['app/TwitterListViewModel.js'].lineData[4]++;
+_$jscoverage['app/TwitterListViewModel.js'].lineData[2]++;
+define(['jquery', 'knockout', 'moment', 'String.extend'], function($, ko, moment) {
+  _$jscoverage['app/TwitterListViewModel.js'].lineData[3]++;
   function TwitterListViewModel(options) {
-    _$jscoverage['app/TwitterListViewModel.js'].lineData[5]++;
+    _$jscoverage['app/TwitterListViewModel.js'].lineData[4]++;
     var self = this;
-    _$jscoverage['app/TwitterListViewModel.js'].lineData[6]++;
+    _$jscoverage['app/TwitterListViewModel.js'].lineData[5]++;
     var twitterApi = options.twitterApi;
-    _$jscoverage['app/TwitterListViewModel.js'].lineData[7]++;
+    _$jscoverage['app/TwitterListViewModel.js'].lineData[6]++;
     var config = options.config;
-    _$jscoverage['app/TwitterListViewModel.js'].lineData[9]++;
+    _$jscoverage['app/TwitterListViewModel.js'].lineData[8]++;
     self.currentTweets = ko.observableArray([]);
-    _$jscoverage['app/TwitterListViewModel.js'].lineData[14]++;
+    _$jscoverage['app/TwitterListViewModel.js'].lineData[13]++;
     ko.computed(function() {
-  _$jscoverage['app/TwitterListViewModel.js'].lineData[27]++;
+  _$jscoverage['app/TwitterListViewModel.js'].lineData[26]++;
   twitterApi.getRecentPosts({
   count: config.twitter.recentCount}).pipe(function(data) {
-  _$jscoverage['app/TwitterListViewModel.js'].lineData[18]++;
+  _$jscoverage['app/TwitterListViewModel.js'].lineData[17]++;
   var tweets = [];
-  _$jscoverage['app/TwitterListViewModel.js'].lineData[19]++;
+  _$jscoverage['app/TwitterListViewModel.js'].lineData[18]++;
   $.each(data, function(index, value) {
-  _$jscoverage['app/TwitterListViewModel.js'].lineData[20]++;
+  _$jscoverage['app/TwitterListViewModel.js'].lineData[19]++;
   value.created_at = moment(value.created_at).fromNow();
-  _$jscoverage['app/TwitterListViewModel.js'].lineData[21]++;
+  _$jscoverage['app/TwitterListViewModel.js'].lineData[20]++;
   value.text = value.text.parseURL().parseUsername().parseHashtag();
-  _$jscoverage['app/TwitterListViewModel.js'].lineData[22]++;
+  _$jscoverage['app/TwitterListViewModel.js'].lineData[21]++;
   tweets.push(value);
 });
-  _$jscoverage['app/TwitterListViewModel.js'].lineData[24]++;
+  _$jscoverage['app/TwitterListViewModel.js'].lineData[23]++;
   self.currentTweets(data);
 }).done(function(data) {
-  _$jscoverage['app/TwitterListViewModel.js'].lineData[26]++;
+  _$jscoverage['app/TwitterListViewModel.js'].lineData[25]++;
   $('.tweets').fadeIn('slow');
 }).fail(function(e) {
-  _$jscoverage['app/TwitterListViewModel.js'].lineData[28]++;
+  _$jscoverage['app/TwitterListViewModel.js'].lineData[27]++;
   console.log('error: ');
-  _$jscoverage['app/TwitterListViewModel.js'].lineData[29]++;
+  _$jscoverage['app/TwitterListViewModel.js'].lineData[28]++;
   console.log(e);
 });
 }, this);
   }
-  _$jscoverage['app/TwitterListViewModel.js'].lineData[34]++;
-  window.LP.TwitterListViewModel = TwitterListViewModel;
-}());
+  _$jscoverage['app/TwitterListViewModel.js'].lineData[33]++;
+  return TwitterListViewModel;
+});

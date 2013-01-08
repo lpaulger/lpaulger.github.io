@@ -1,6 +1,5 @@
-/*global console:false moment:false */
-
-(function() {
+/*global console:false define:false */
+define(['jquery', 'knockout', 'moment', 'String.extend'], function($, ko, moment){
   function TwitterListViewModel(options) {
     var self = this;
     var twitterApi = options.twitterApi;
@@ -31,5 +30,5 @@
     }, this);
   }
 
-  window.LP.TwitterListViewModel = TwitterListViewModel;
-}());
+  return TwitterListViewModel;
+});

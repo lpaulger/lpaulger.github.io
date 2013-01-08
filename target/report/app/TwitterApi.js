@@ -203,7 +203,7 @@ if (! this._$jscoverage) {
 if (! _$jscoverage['app/TwitterApi.js']) {
   _$jscoverage['app/TwitterApi.js'] = {};
   _$jscoverage['app/TwitterApi.js'].lineData = [];
-  _$jscoverage['app/TwitterApi.js'].lineData[1] = 0;
+  _$jscoverage['app/TwitterApi.js'].lineData[2] = 0;
   _$jscoverage['app/TwitterApi.js'].lineData[7] = 0;
   _$jscoverage['app/TwitterApi.js'].lineData[8] = 0;
   _$jscoverage['app/TwitterApi.js'].lineData[10] = 0;
@@ -216,8 +216,8 @@ if (! _$jscoverage['app/TwitterApi.js']) {
 if (! _$jscoverage['app/TwitterApi.js'].branchData) {
   _$jscoverage['app/TwitterApi.js'].branchData = [];
 }
-_$jscoverage['app/TwitterApi.js'].lineData[1]++;
-(function() {
+_$jscoverage['app/TwitterApi.js'].lineData[2]++;
+define(['jquery'], function($) {
   _$jscoverage['app/TwitterApi.js'].lineData[7]++;
   function TwitterApi(config) {
     _$jscoverage['app/TwitterApi.js'].lineData[8]++;
@@ -241,5 +241,5 @@ _$jscoverage['app/TwitterApi.js'].lineData[1]++;
 };
   }
   _$jscoverage['app/TwitterApi.js'].lineData[33]++;
-  window.TwitterApi = TwitterApi;
-}());
+  return TwitterApi;
+});

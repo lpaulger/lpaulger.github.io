@@ -203,21 +203,28 @@ if (! this._$jscoverage) {
 if (! _$jscoverage['app/main.js']) {
   _$jscoverage['app/main.js'] = {};
   _$jscoverage['app/main.js'].lineData = [];
-  _$jscoverage['app/main.js'].lineData[1] = 0;
-  _$jscoverage['app/main.js'].lineData[2] = 0;
-  _$jscoverage['app/main.js'].lineData[10] = 0;
+  _$jscoverage['app/main.js'].lineData[3] = 0;
+  _$jscoverage['app/main.js'].lineData[11] = 0;
+  _$jscoverage['app/main.js'].lineData[12] = 0;
+  _$jscoverage['app/main.js'].lineData[20] = 0;
 }
 if (! _$jscoverage['app/main.js'].branchData) {
   _$jscoverage['app/main.js'].branchData = [];
 }
-_$jscoverage['app/main.js'].lineData[1]++;
-$(document).ready(function() {
-  _$jscoverage['app/main.js'].lineData[2]++;
+_$jscoverage['app/main.js'].lineData[3]++;
+require.config({
+  paths: {
+  jquery: 'https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min', 
+  knockout: '../lib/knockout-2.2.0', 
+  moment: '../lib/moment.min'}});
+_$jscoverage['app/main.js'].lineData[11]++;
+require(["App"], function(App) {
+  _$jscoverage['app/main.js'].lineData[12]++;
   var config = {
   twitter: {
   baseUrl: 'https://api.twitter.com/1', 
   username: 'lmpaulger', 
   recentCount: 5}};
-  _$jscoverage['app/main.js'].lineData[10]++;
-  new window.LP.App().init(config);
+  _$jscoverage['app/main.js'].lineData[20]++;
+  new App.init(config);
 });
