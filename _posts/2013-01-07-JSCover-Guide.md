@@ -9,7 +9,7 @@ tags: [javascript, JSCover, test, testing]
 
 I've begun using [JSCover](http://tntim96.github.com/JSCover/) and have found that understanding how it works isn't as straight forward as I initially thought **(I would say I'm a novice at setting up javascript tooling)**. Lets first get JSCover installed and then move on to explaining how it works.
 
-## Installation
+### Installation
 
 1. download from [JSCover Download link](http://sourceforge.net/projects/jscover/files/JSCover-0.2.0.zip/download)
 2. run the example-server.sh (In Terminal or CmdPrompt) you may need to modify this script to configure what options the server is run with.
@@ -19,11 +19,11 @@ I've begun using [JSCover](http://tntim96.github.com/JSCover/) and have found th
     example-server.sh
 3.  by default go to [demo page](http://localhost:8080/jscoverage.html?/index.html)
 
-## Explanation
+### Explanation
 
-Once installed and you've navigated to the link you'll see 5 seperate tabs. Lets understand how to think about JSCover.  JSCover simply keeps track of when a specific peice of code is run.  So your unit tests, in theory run and hit your js files. When they hit these js files they are executing code and therefor JSCover tracks when these functions are called hence giving you an understanding of how much of your code is covered by tests.
+Once installed and you've navigated to the link you'll see 5 separate tabs. Lets understand how to think about JSCover.  JSCover simply keeps track of when a specific peice of code is run.  So your unit tests, in theory run and hit your js files. When they hit these js files they are executing code and therefor JSCover tracks when these functions are called hence giving you an understanding of how much of your code is covered by tests.
 
-## Testing using QUnit/Jasmine
+### Testing using QUnit/Jasmine
 
 It's important to understand that the executing js needs to exist in the incoming directory. All files you wish not to be tracked (src files, libs, test files) need to ignored using --no-instrument=PATH
 
