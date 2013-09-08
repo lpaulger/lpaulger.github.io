@@ -17,7 +17,7 @@
 /**
  * IE8
  */
-/* normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
+/*! normalize.css 2012-07-07T09:50 UTC - http://github.com/necolas/normalize.css */
 /* ==========================================================================
    HTML5 display definitions
    ========================================================================== */
@@ -582,12 +582,12 @@ ol li {
   *zoom: 1;
   max-width: 59em;
   _width: 59em;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 1em;
   padding-right: 1em;
+  margin-left: auto;
+  margin-right: auto;
 }
-/* line 38, ../../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
+/* line 38, ../../../../../../../../Users/lpaulger/.rvm/gems/ruby-2.0.0-p0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
 .wrapper:after {
   content: "";
   display: table;
@@ -866,13 +866,13 @@ body {
 @media only screen and (min-width: 880px) {
   /* line 195, ../sass/main.scss */
   body {
-    background: url('../../../img/trees5.jpg?1356969836');
+    background: url('../../../img/trees5.jpg?1357108141');
   }
 }
 @media only screen and (min-width: 481px) and (max-width: 880px) {
   /* line 195, ../sass/main.scss */
   body {
-    background: url('../../../img/trees5.jpg?1356969836');
+    background: url('../../../img/trees5.jpg?1357108141');
   }
 }
 @media only screen and (max-width: 480px) {
@@ -958,7 +958,7 @@ body {
 /* line 225, ../sass/main.scss */
 #home .hero-unit {
   color: #0088cc;
-  background: url('../../../img/me.jpg?1356961152');
+  background: url('../../../img/me.jpg?1357108141');
   padding: 30px;
   padding-top: 129px;
   padding-bottom: 0px;
@@ -978,7 +978,7 @@ body {
   /* line 243, ../sass/main.scss */
   #home .hero-unit {
     color: #0088cc;
-    background: url('../../../img/me.jpg?1356961152');
+    background: url('../../../img/me.jpg?1357108141');
     padding: 30px;
     padding-top: 80px;
   }
@@ -998,7 +998,7 @@ body {
   /* line 262, ../sass/main.scss */
   #home .hero-unit {
     color: #0088cc;
-    background: url('../../../img/me.jpg?1356961152');
+    background: url('../../../img/me.jpg?1357108141');
     padding: 30px;
     padding-top: 80px;
   }
@@ -1082,7 +1082,7 @@ body {
     width: 49.15254%;
     float: right;
     margin-right: 0;
-    #margin-left: -1em;
+    *margin-left: -1em;
     display: inline;
   }
 }
@@ -1092,7 +1092,7 @@ body {
     width: 49.15254%;
     float: right;
     margin-right: 0;
-    #margin-left: -1em;
+    *margin-left: -1em;
     display: inline;
   }
 }
@@ -1197,7 +1197,7 @@ body {
     width: 49.15254%;
     float: right;
     margin-right: 0;
-    #margin-left: -1em;
+    *margin-left: -1em;
     display: inline;
   }
 }
@@ -1207,7 +1207,7 @@ body {
     width: 49.15254%;
     float: right;
     margin-right: 0;
-    #margin-left: -1em;
+    *margin-left: -1em;
     display: inline;
   }
 }
