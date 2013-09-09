@@ -1,6 +1,85 @@
----
-theme :
-  name : LP
----
-{% include JB/setup %}
-{% include themes/LP/default.html %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>{{ page.title }}</title>
+  {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    <meta property="og:description" content="{{ page.description }}" />
+  {% endif %}
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="/stylesheets/main.css">
+
+</head>
+<body>
+  <div id="wrap">
+    <header>
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <a href="http://coding.fm/" target="_blank"><img src="/images/LP.jpg" alt="author" class="img-circle pull-right hidden-xs" style="margin: 5px;" height="40" width="40"></a>
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">{{ site.title }}</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/Projects/">Projects <span class="label label-primary pull-right">1</span></a></li>
+            <li><a href="/About/">About</a></li>
+            <li><a href="/Contact/">Contact</a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="label label-primary pull-right">{{site.posts.size}}</span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/Archive/">Archive</a></li>
+                <li><a href="/categories.html">Categories</a></li>
+                <li><a href="/tags.html">Tags</a></li>
+                <li role="presentation" class="divider"></li>
+                {% for post in site.posts %}
+                <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                {% endfor %}
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+    </header>
+    <div class="container">
+      {{ content }}
+    </div>
+  </div>
+  <footer>
+    <nav class="navbar navbar-default" role="navigation">
+      <ul class="nav pull-left">
+        <li><a href="/Contact/">Created By Lucas Paulger - Freelance Developer</a></li>
+        <li><a href="mailto:{{site.author.email}}">{{site.author.email}}</a></li>
+        <li><a href="/sitemap.txt">sitemap</a></li>
+      </ul>
+      <ul class="nav pull-right social">
+        <li><a href="https://twitter.com/lmpaulger" target="_blank"><i class="icon-twitter icon-2x"></i></a></li>
+        <li><a href="https://github.com/lpaulger" target="_blank"><i class="icon-github icon-2x"></i></a></li>
+        <li><a href="http://www.linkedin.com/pub/lucas-paulger/22/2a/253" target="_blank"><i class="icon-linkedin-sign icon-2x"></i></a></li>
+      </ul>
+    </nav>
+  </footer>
+  {% include JB/analytics-providers/google %}
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+
+  <script src="/javascript/main.js"></script>
+</body>
+</html>

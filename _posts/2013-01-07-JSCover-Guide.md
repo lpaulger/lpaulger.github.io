@@ -5,7 +5,6 @@ description: "How to get JSCover running with your project"
 category: code-quality
 tags: [javascript, JSCover, test, testing]
 ---
-{% include JB/setup %}
 
 I've begun using [JSCover](http://tntim96.github.com/JSCover/) and have found that understanding how it works isn't as straight forward as I initially thought **(I would say I'm a novice at setting up javascript tooling)**. Lets first get JSCover installed and then move on to explaining how it works.
 
@@ -29,7 +28,9 @@ It's important to understand that the executing js needs to exist in the incomin
 
 Example:
     
-    java -jar target/dist/JSCover-all.jar -ws --branch --document-root=application/Content/scripts/ --report-dir=jscover --no-instrument=test --no-instrument=src
+    java -jar target/dist/JSCover-all.jar -ws --branch 
+     --document-root=application/Content/scripts/
+     --report-dir=jscover --no-instrument=test --no-instrument=src
 
 Additionally any folders you do not want to be searched you can exclude by adding the --exclude=PATH paramater (can be called multiple times)
 

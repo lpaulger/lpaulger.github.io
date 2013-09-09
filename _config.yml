@@ -2,18 +2,18 @@
 # For more see: https://github.com/mojombo/jekyll/wiki/Permalinks
 permalink: /:categories/:year/:month/:day/:title 
 
-exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", ".scss", "*/config.rb", "JSCover", "webhook.js"]
-auto: true
-pygments: true
 
+markdown: redcarpet
+pygments: true
+safe: true
 # Themes are encouraged to use these universal variables 
 # so be sure to set them if your theme uses them.
 #
 title : LP Projects
-tagline: programming(one_line_at_a_time);
+tagline : Berlin, Germany - Freelance front-end developer
 author :
   name : Lucas Paulger
-  email : lucas@lucaspaulger.com
+  email : lucas.paulger@gmail.com
   github : lpaulger
   twitter : lmpaulger
   feedburner : feedname
@@ -91,7 +91,7 @@ JB :
       num_posts: 5
       width: 580
       colorscheme: light
-   
+
   # Settings for analytics helper
   # Set 'provider' to the analytics provider you want to use.
   # Set 'provider' to false to turn analytics off globally.
@@ -112,7 +112,6 @@ JB :
   #
   sharing :
     provider : false
-    
   # Settings for all other include helpers can be defined by creating 
   # a hash with key named for the given helper. ex:
   #
@@ -123,4 +122,3 @@ JB :
   # and include your custom code. Your custom file must be defined at:
   #   ./_includes/custom/[HELPER]
   # where [HELPER] is the name of the helper you are overriding.
-  

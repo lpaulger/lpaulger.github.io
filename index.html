@@ -1,0 +1,36 @@
+---
+layout: default
+title: LP Projects
+---
+<section class="col-md-9">  
+  <div class="page-header">
+    <h1>LP Projects <small>{{site.tagline}}</small></h1> 
+  </div>
+
+      <!-- 
+      <div class="btn-group btn-group-justified">
+        <a href="/About/" class="btn btn-primary btn-lg">About me</a>
+        <a href="/Portfolio/" class="btn btn-info btn-lg">My stuff</a>  
+      </div>
+    -->
+
+    <h2>Recent Posts</h2>
+    <p>Check out my latest work! I try to write whenever I engage in something new or exciting. Please leave comments if something interests you, or you want to know more!</p>
+    {% assign posts = site.posts %} {% assign listing_limit = 3 %} {% include post-listing.html %}
+  </section>
+  <aside class="col-md-3">
+    <div class="clearfix" style="padding:10px 0;">
+      <img src="http://www.gravatar.com/avatar/64fa194d80712ca6caa1843bc538a11e.png" alt="author" class="img-circle pull-right">
+      <h1 style="margin: 0;">Lucas Paulger</h1>
+      <p>Hello, I'm Lucas Paulger - Front-end developer living in Berlin, Germany.</p>
+      <p>I'm currently enjoying <a href="angularjs.org">AngularJS</a>, <a href="http://www.html5rocks.com/en/"><i class="icon-html5"></i></a>, <a href="http://www.css3.info/"><i class="icon-css3"></i></a>, <a href="nodejs.org">Nodejs</a>, and <a href="http://phonegap.com">phonegap</a>.</p>
+    </div>
+    
+
+    <h1>Blog Posts</h1>
+    <ul class="posts">
+      {% for post in site.posts %}
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </aside>
