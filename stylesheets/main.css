@@ -31,33 +31,23 @@ body {
 header > .navbar {
   margin: 0;
 }
-/* line 33, ../sass/main.scss */
-header > .navbar li:first-child {
-  min-width: 110px;
-  vertical-align: middle;
-}
-/* line 37, ../sass/main.scss */
-header > .navbar li:last-child {
-  min-width: 85px;
-  vertical-align: middle;
-}
 
-/* line 44, ../sass/main.scss */
+/* line 34, ../sass/main.scss */
 footer > .navbar {
   margin: 0;
   border-radius: 0;
 }
-/* line 47, ../sass/main.scss */
+/* line 37, ../sass/main.scss */
 footer > .navbar li {
   display: inline-block;
 }
 
-/* line 54, ../sass/main.scss */
+/* line 44, ../sass/main.scss */
 #hobbies img, #history img {
   padding: 5px;
 }
 
-/* line 61, ../sass/main.scss */
+/* line 51, ../sass/main.scss */
 .carousel {
   -webkit-box-shadow: black 2px 2px 10px;
   -moz-box-shadow: black 2px 2px 10px;

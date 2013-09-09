@@ -29,16 +29,6 @@ body {
 
 header > .navbar {
   margin: 0 ;
-  li{
-    &:first-child {
-      min-width: 110px;
-      vertical-align: middle;
-    }
-    &:last-child {
-      min-width: 85px;
-      vertical-align: middle;
-    }
-  }
 }
 
 footer > .navbar {
