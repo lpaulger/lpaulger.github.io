@@ -5,7 +5,6 @@ description: "How I succeeded and failed while using and learning AngularJS"
 category: frameworks
 tags: [javascript, AngularJS]
 ---
-{% include JB/setup %}
 
 As I dive into front-end web development head first, I'm quickly learning that things don't always work perfectly.  Let me start of by saying AngularJS is a fairly new javascript library/framework compared to others aiming to solve the client side application problem.  When I was tasked at picking a tool/framework, I chose AngularJS for a few reasons. 
 
