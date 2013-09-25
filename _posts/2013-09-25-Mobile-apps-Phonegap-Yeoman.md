@@ -24,9 +24,9 @@ I will be building a timer app - starting with a blank application, to web appli
 
 Install these tools:
 
-* [Node.js and npm](http://nodejs.org/)
-* [Yeoman](http://Yeoman.io)
-* [Phonegap](http://phonegap.com/install/) - this depends on node v 0.10 
+* [Node.js and npm](http://nodejs.org/) node -v 0.10.*
+* [Yeoman](http://Yeoman.io) yo -v 1.0.*
+* [Phonegap/cordova](http://phonegap.com/install/) cordova version 3.0.*
 * [Xcode](https://developer.apple.com/xcode/) or [Android SDK + Emulator](http://developer.android.com/sdk/index.html) (depending on what you want)
 
 **consider installing both yeoman and phonegap packages globally**
@@ -307,9 +307,11 @@ And to build the phonegap app run
 with your favorite browser (mine is chrome)
 
 **For ios**
-build the phonegap application, and run
+once the phonegap application is build you can run using:
 
-    cordova run ios
+    cordova emulate ios
+
+or by opening the xcode project file - appName/platforms/ios/appName.xcodeproj ([instructions](http://docs.phonegap.com/en/edge/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide))
 
 once the simulator is up and running, open up **Safari** and go to Develop -> iPhone Simulator -> index.html
 
