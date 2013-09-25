@@ -1,29 +1,30 @@
 ---
 layout: post
-title: "Mobile Apps with Phonegap and Angularjs"
+title: "Mobile Apps with Phonegap and Yeoman"
 description: "How to create a single page app for web and mobile"
 category: javascript
-tags: [javascript, phonegap, AngularJS, yeoman, grunt, bower]
+tags: [javascript, phonegap, yeoman, grunt, bower, AngularJS]
 ---
 
-<h3><a href="https://github.com/lpaulger/timerApp"><i class="icon-github icon-2x"></i> Link togithub repository</a></h3>
+<h3><a href="https://github.com/lpaulger/timerApp"><i class="icon-github icon-2x"></i> Link to github repository</a></h3>
 
-I've been building mobile-first web applications for some time now, and I want to describe my development process from start to finish including deploying to the web, to iOS, and to Android devices!  To start, I develope using a macbook pro, sublime text 2, and terminal.  I would suggested either installing these, or similar tools you are familiar with.
+I've been building mobile-first web applications for some time now, and I want to describe my development process from start to finish (including deploying to the web, to iOS, and to Android devices). To start, I develop using a macbook pro, sublime text 2, and terminal.  I would suggested either installing these, or similar tools you are familiar with.
 
-I will be building a timer app - starting with a blank application, to web application, to mobile applications!
+I will be building a timer app - starting with a blank application, to web application, to mobile applications.  My framework for this demonstration will be using angularjs, but simply replace these packages and angular references with what you want to use.
 
 <div style="margin: 0 auto; text-align: center;">
-  <img src="/images/2013-09-17/bootstrap3.png" alt="Basic app running" style="width: 200px;"/>
+  <img src="/images/2013-09-25/bootstrap3.png" alt="Basic app running" style="width: 200px;"/>
   <i class="icon-chevron-right"></i>
-  <img src="/images/2013-09-17/webapp.png" alt="Basic app running" style="width: 200px;"/>
+  <img src="/images/2013-09-25/webapp.png" alt="Basic app running" style="width: 200px;"/>
   <i class="icon-chevron-right"></i>
-  <img src="/images/2013-09-17/iosapp.png" alt="Basic app running" style="width: 200px;"/>
+  <img src="/images/2013-09-25/iosapp.png" alt="Basic app running" style="width: 200px;"/>
 </div>
 
 ### Setup
 
 Install these tools:
 
+* [Node.js and npm](http://nodejs.org/)
 * [Yeoman](http://Yeoman.io)
 * [Phonegap](http://phonegap.com/install/) - this depends on node v 0.10 
 * [Xcode](https://developer.apple.com/xcode/) or [Android SDK + Emulator](http://developer.android.com/sdk/index.html) (depending on what you want)
@@ -36,19 +37,19 @@ Install these tools:
 Next lets create our application structure using the following 'cordova' command. I'll call my app 'timer'. Make sure you are using node version 0.10
   
     nvm use 0.10
-    cordova create timer com.lpprojects.timerapp "TimerApp"
+    cordova create timer com.lpprojects.timerapp "TimerApp" /** the com.company.appname is like a backwards web domain naming convention for mobile apps **/
     cd timer
     cordova platform add ios /**add platforms you want to support here**/
 
-Now it's time to use [Yeoman](http://Yeoman.io) to scaffold a basic angular application! 
+Now it's time to use [Yeoman](http://Yeoman.io) to scaffold a basic angular application.
 
-*Please Note: yeoman allows you to scaffold apps using many frameworks!*
+*Please Note: yeoman allows you to scaffold apps using many frameworks*
 
-**Run the following:**
+**Run the following (replace angular with your framework of choice):**
 
     yo angular
 
-[Yeoman](http://Yeoman.io) will ask you a series of questions (see below). I will not be using these options.
+[Yeoman](http://Yeoman.io) will ask you a series of questions related to the package you requested(see below). I will not be using these options.
 
     Would you like to include Twitter Bootstrap? (Y/n) n
     If so, would you like to use Twitter Bootstrap for Compass (as opposed to vanilla CSS)? (Y/n) n
@@ -62,7 +63,7 @@ Now that your scaffolded app is complete, lets take a look at what it generated:
 * node_modules ~ all grunt modules are installed here 
 * test ~ if (hopefully when) you write tests, they will go here
 * component.json ~ think of this as your front-end package information
-* gruntfile.js ~ the file containing all the tools to develop, test and deploy code (Why not take a look inside!)
+* gruntfile.js ~ the file containing all the tools to develop, test and deploy code (Why not take a look inside)
 * package.json ~ this of this as your back-end package info (since this is a single page app, it just contains grunt related info)
 
 Refer to [http://Yeoman.io](http://Yeoman.io) for any additional [Yeoman](http://Yeoman.io) questions I don't cover in this post.
@@ -117,11 +118,11 @@ Run the following command to install these packages:
   
     bower install
 
-The new version of angular broke the generated code, time to fix this!
+The new version of angular broke the generated code, time to fix this.
 
 #### Adding dependencies
 
-In the new angular version, The ngRoute module was removed from the core project (angular.js) and I now need to include that as a seperate dependency! I will add the file to my component.json and install it.
+In the new angular version, The ngRoute module was removed from the core project (angular.js) and I now need to include that as a seperate dependency. I will add the file to my component.json and install it.
 
 * angular-route : ngRoute module used for routing the browsers url to different parts of our application
 
@@ -153,17 +154,17 @@ next I need to include the file on the page so in index.html I add it under the 
 
 #### app.js
 
-finally add the dependencies into my angular application in app.js! *see the ['ngRoute'] is the loaded dependency*
+finally add the dependencies into my angular application in app.js. *see the ['ngRoute'] is the loaded dependency*
 
     angular.module('timerApp', ['ngRoute', 'ui.bootstrap', 'LocalStorageModule'])
 
-#### NOTE: adding Angular dependencies is a useful process to remember!
+#### NOTE: adding Angular dependencies is a useful process to remember if using angularjs as your framework.
 
 ### Developing
 
-Now that I have setup my project, I'm going to start building my app!
+Now that I have setup my project, I'm going to start building my app.
 
-#### Program!
+#### Programming
 
 Since I don't want to focus on the actual writing of code, please take a look at my [github repository](https://github.com/lpaulger/timerApp) for the timerApp code.
 
@@ -285,7 +286,7 @@ Now, the build task will need to make use of the changes above. I prefer to make
       }
     });
 
-Please note for the else* condition, I moved the 'concat' task before 'imagemin' because it causes css compile issues otherwise.  For the phonegap build, I don't want to minify the scripts for debugging purposes.
+Please note for the else condition, I moved the 'concat' task before 'imagemin' because it causes css compile issues otherwise.  For the phonegap build, I don't want to minify the scripts for debugging purposes.
 
 you will notice, when we pass 'phonegap' as the target, it simply cleans the phonegap directory, builds the app, and copies the re-build code to the phonegap directory. The last command build the actual ios application.
 
@@ -295,7 +296,7 @@ To build the web app, simply run
 
 And to build the phonegap app run
 
-   grunt build:phonegap
+    grunt build:phonegap 
 
 ### Debugging
 
@@ -303,18 +304,18 @@ And to build the phonegap app run
 
     grunt server
 
-with your favorite browser (mine is chrome!)
+with your favorite browser (mine is chrome)
 
 **For ios**
 build the phonegap application, and run
 
     cordova run ios
 
-once the simulator is up and running, open up safari and go to Develop -> iPhone Simulator -> index.html
+once the simulator is up and running, open up **Safari** and go to Develop -> iPhone Simulator -> index.html
 
-### Use the device!
+### Use the device
 
-Now for the most useful and important part of using phonegap - use the device features!  [Here](http://docs.phonegap.com/en/3.0.0/index.html) is the phonegap list of features.  In timer app, I will be making use of the vibration features.
+Now for the most useful and important part of using phonegap - use the device features  [Here](http://docs.phonegap.com/en/3.0.0/index.html) is the phonegap list of features.  In timer app, I will be making use of the vibration features.
 
 When the mobile app is built, a cordova.js file is injected into the root directory.  For simplicity, we will just include the reference in our index.html file.  This will need to go within the head section of the index.html file.
 
@@ -324,10 +325,10 @@ Next lets fire the correct events in our app when we want. The [vibration](http:
 
     navigator.notification.vibrate(2500);
 
-In main.js I refer to this call.  Now for some device specific features, they are only useable on an actual device (vibrate, beep).
+In main.js I refer to this call.  Now for some device specific features, they are only useable on an actual device (vibrate, beep), but other features like contacts, alert and so on is still useable just with the simulator.
 
 ### Conclusion
 
-Thats all you need to start developing phonegap mobile apps! Just remember, the libraries and tools I use will surely be upgraded as time goes on, keep that in mind when following my instructions. If you have any questions, confusions or suggestions please feel free to leave a message below. Happy mobile app development!
+Thats all you need to start developing phonegap mobile apps. Just remember, the libraries and tools I use will surely be upgraded as time goes on, keep that in mind when following my instructions. If you have any questions, confusions or suggestions please feel free to leave a message below. Happy mobile app development!
 
 
