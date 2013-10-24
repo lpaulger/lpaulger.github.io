@@ -26,13 +26,13 @@ Install these tools:
 
 * [Node.js and npm](http://nodejs.org/) node -v 0.10.*
 * [Yeoman](http://Yeoman.io) yo -v 1.0.*
-* [Phonegap/cordova](http://phonegap.com/install/) cordova version 3.0.*
+* [Phonegap/cordova](http://cordova.apache.org/#download) cordova version 3.1.*
 * [Xcode](https://developer.apple.com/xcode/) or [Android SDK + Emulator](http://developer.android.com/sdk/index.html) (depending on what you want)
 
 **consider installing both yeoman and phonegap packages globally**
 
     npm install -g yo
-    npm install -g phonegap
+    npm install -g cordova
 
 Next lets create our application structure using the following 'cordova' command. I'll call my app 'timer'. Make sure you are using node version 0.10
   

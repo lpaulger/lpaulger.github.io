@@ -56,3 +56,31 @@ footer > .navbar li {
   max-width: 400px;
   display: block;
 }
+
+/* line 64, ../sass/main.scss */
+.caption ul {
+  height: 88px;
+}
+/* line 67, ../sass/main.scss */
+.caption p {
+  min-height: 38px;
+}
+
+@media (max-width: 380px) {
+  /* line 72, ../sass/main.scss */
+  iframe.mobile-app {
+    width: 100%;
+    height: 480px;
+    position: absolute;
+    left: 0;
+  }
+}
+@media (min-width: 381px) {
+  /* line 72, ../sass/main.scss */
+  iframe.mobile-app {
+    float: left;
+    width: 320px;
+    height: 480px;
+    margin: 0 15px;
+  }
+}
