@@ -10,21 +10,21 @@ tags: [javascript, phonegap, yeoman, grunt, bower, AngularJS]
 
 ## The app
 
-This is a continuation of my blog post from last month [Mobile Apps Phonegap Yeoman](/javascript/2013/09/25/Mobile-apps-Phonegap-Yeoman/). I decide to spend a little more time to enhance the application, submit it to iTunes and publish it to the [web](/timerApp/) (try out the app to the left). The iPhone App will be available soon in [the app store](https://itunes.apple.com/us/app/repeat-timer-lp/id730948498?ls=1&mt=8). Feel free to leave comments and let me know what you think. Please find the [Github repository here](https://github.com/lpaulger/timerApp).
+This is a continuation of my blog post from last month [Mobile Apps Phonegap Yeoman](/javascript/2013/09/25/Mobile-apps-Phonegap-Yeoman/). I decided to spend a little more time to enhance the application, submit it to iTunes and publish it to the [web](/timerApp/) (try out the app to the left). The iPhone App will be available soon in [the app store](https://itunes.apple.com/us/app/repeat-timer-lp/id730948498?ls=1&mt=8). Feel free to leave comments and let me know what you think. Please find the [Github repository here](https://github.com/lpaulger/timerApp).
 
-## Whats new?
+## What's new?
 
 ### Design
 
-The application design changed since [last months blog post](/javascript/2013/09/25/Mobile-apps-Phonegap-Yeoman/). primarily the clock interface and the timer modal.  I am still learning phonegap myself; and the quarks that go with it.
+The application design has changed since [last month's blog post](/javascript/2013/09/25/Mobile-apps-Phonegap-Yeoman/), primarily the clock interface and the timer modal.  I am still learning phonegap myself and the quarks that go with it.
 
-First was the clock, it stands out as my biggest UI change. The design change came to me when creating the app icon; the icon being a clock. It made me feel like I was missing the relationship between the icon and the application and it inspired me to add a css3 only clock to give the app the personality I was looking for.  Check out the code to see how it was done.
+First was the clock; it stands out as my biggest UI change. The design change came to me when creating the app icon; the icon being a clock. It made me feel like I was missing the relationship between the icon and the application and it inspired me to add a css3 only clock to give the app the personality I was looking for.  Check out the code to see how it was done.
 
 Secondly, when looking at the time selection modal I noticed a huge annoyance when accounting for touch friendly events/inputs. To keep things simple I changed the modal windows to use a select element instead of text inputs.  Allowing a smoother UI that takes advantage of the native keyboard features.
 
 ### Development
 
-See the [blog](/javascript/2013/09/25/Mobile-apps-Phonegap-Yeoman/) for specifics. I've added some unit tests to the main controller. otherwise I was just trying to clean up my code a bit. I had a realization that if I want to share some work with the world; sometimes I have to accept that it won't be perfect and instead just get it out there for some good ol' feedback from the community :).
+See the [blog](/javascript/2013/09/25/Mobile-apps-Phonegap-Yeoman/) for specifics. I've added some unit tests to the main controller. Otherwise I was just trying to clean up my code a bit. I had a realization that if I want to share some work with the world, sometimes I have to accept that it won't be perfect and instead just get it out there for some good ol' feedback from the community :).
 
 ## Contributing
 
