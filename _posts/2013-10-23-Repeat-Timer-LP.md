@@ -20,7 +20,7 @@ The application design has changed since [last month's blog post](/javascript/20
 
 The Clock stands out as my biggest UI change. The design change came to me while creating the app icon, which is a circle clock with arms. It made me feel like I was missing the relationship between the icon and the application and it inspired me to add a css3 only clock to give the app the personality I was looking for.  Check out the code to see how it was done.
 
-Secondly, when looking at the time selection modal I noticed a huge annoyance when accounting for touch friendly events/inputs. To keep things simple I changed the modal windows to use a select element instead of text inputs.  Allowing a smoother UI that takes advantage of the native keyboard features.
+When I looked at the time selection modal I noticed that the UI picker wasn't intuitive.  This annoyed me because it didn't feel right on the mobile application, and I needed to account for touch-friendly events and inputs. Allowing a smoother UI that takes advantage of the native keyboard features.
 
 ### Development
 
