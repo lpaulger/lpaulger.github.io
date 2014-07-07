@@ -11,10 +11,11 @@
   {% endif %}
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
   <!-- Latest compiled and minified CSS -->
   <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css">
   <!-- Optional theme -->
-
+  <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css">
   <!-- Custom CSS -->
   <link rel="stylesheet" href="/stylesheets/main.css">
 
@@ -76,29 +77,10 @@
     </nav>
   </footer>
   {% include JB/analytics-providers/google %}
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" ></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js" async></script>
   <!-- Latest compiled and minified JavaScript -->
   <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js" async></script>
 
   <script src="/javascript/main.js" async></script>
-
-  <script>
-    var cb = function() {
-      var stylesheets = [
-      '//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css',
-      '//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-theme.min.css'];
-      var h = document.getElementsByTagName('head')[0];
-      for (var i = 0; i < stylesheets.length; i++) {
-        var l = document.createElement('link'); l.rel = 'stylesheet';
-        l.href = stylesheets[i];
-        h.parentNode.insertBefore(l, h);
-      };
-    };
-
-    var raf = requestAnimationFrame || mozRequestAnimationFrame ||
-        webkitRequestAnimationFrame || msRequestAnimationFrame;
-    if (raf) raf(cb);
-    else window.addEventListener('load', cb);
-  </script>
 </body>
 </html>
