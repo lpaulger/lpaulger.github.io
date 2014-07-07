@@ -6,7 +6,7 @@ category: javascript
 tags: [javascript, phonegap, yeoman, grunt, bower, AngularJS]
 ---
 
-###[Quicklink - Github](https://github.com/exBerliners/generator-ng-cordova) [![Build Status](https://secure.travis-ci.org/exBerliners/generator-ng-cordova.png?branch=master)](https://travis-ci.org/exBerliners/generator-ng-cordova)
+###[Quicklink - Github](https://github.com/lpaulger/generator-ng-cordova) [![Build Status](https://secure.travis-ci.org/lpaulger/generator-ng-cordova.png?branch=master)](https://travis-ci.org/lpaulger/generator-ng-cordova)
 
 ###Introduction - Yeoman Generators
 
