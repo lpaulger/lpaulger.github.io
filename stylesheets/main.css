@@ -48,27 +48,32 @@ footer > .navbar li {
   padding: 5px;
 }
 
-/* line 57, ../sass/main.scss */
+/* line 50, ../sass/main.scss */
+.post img.mobile-gif {
+  margin: 0em 3em 0em 2em;
+}
+
+/* line 56, ../sass/main.scss */
 .carousel {
-  -webkit-box-shadow: black 2px 2px 10px;
   -moz-box-shadow: black 2px 2px 10px;
+  -webkit-box-shadow: black 2px 2px 10px;
   box-shadow: black 2px 2px 10px;
   margin: 0 auto;
   max-width: 400px;
   display: block;
 }
 
-/* line 65, ../sass/main.scss */
+/* line 64, ../sass/main.scss */
 .caption ul {
   height: 110px;
 }
-/* line 68, ../sass/main.scss */
+/* line 67, ../sass/main.scss */
 .caption p {
   min-height: 38px;
 }
 
 @media (max-width: 380px) {
-  /* line 73, ../sass/main.scss */
+  /* line 72, ../sass/main.scss */
   iframe.mobile-app {
     width: 100%;
     height: 480px;
@@ -77,7 +82,7 @@ footer > .navbar li {
   }
 }
 @media (min-width: 381px) {
-  /* line 73, ../sass/main.scss */
+  /* line 72, ../sass/main.scss */
   iframe.mobile-app {
     float: left;
     width: 320px;
