@@ -1,5 +1,5 @@
 ---
-published: false
+published: true
 layout: post
 title: "How I improved my javascript"
 description: "How I spent the last few months working on a small single page application using only javascript* and how I went about testing, integrating and deploying this application."
@@ -10,7 +10,7 @@ tags: [javascript, integration, testing, TDD]
 <img class="mobile-gif" align="left" height="480" src="/images/2014-11-19/cribbage-the-game-demo.gif">
 
 Here's my **[simple javascript cribbage game](http://lucaspaulger.com/cribbage-the-game/)**, and some things I learned along the way.  
-Below there's a **quick summary** of the topics below:
+Below is a **quick summary** of the topics:
 
 * problems (and solutions) I found during devlopment
 * creating a build/integration cycle for javascript apps
@@ -24,19 +24,21 @@ About five months ago I began work on this game. I wanted to improve my skills a
 
 ####Understand the importance of unit tests
 
-Tests really helped me understand the problem I was trying to solve and at a managable level.  Before I began writing tests, I found my self in what I like to call **the drag**. The drag occurs when code becomes too confusing to follow, and the speed of development slows down immensly. 
+Tests really helped me understand the problem I was trying to solve and at a managable level.  Before I began writing tests, I found myself in what I like to call **the drag**. The drag occurs when code becomes too confusing to follow, and the speed of development comes to a screeching halt. 
 
-The best defense against **the drag** was to simply write unit tests. Tests have proven to be powerful asset to a code base. Once some tests were in place, I started to think of the app as a bunch of simple, yet intuitive problems. These problems in turn could be built upon each other to solve the larger, more complex problems as well; but with the stability and foundation that I could trust. When the time came to solve another complex problem, I could take that problem and break it down into multiple simpler problems and keep my development pace managed.
+The best defense against **the drag** was to simply write unit tests. Tests have proven to be powerful asset to a code base. Once some tests were in place, I started to think of the app as a bunch of simple, yet intuitive problems. These problems in turn could be built upon each other to solve the larger, more complex problems as well; but with the stability and foundation that I could trust. Most commonly I would identify a complex problem, then break it down into multiple small but managable problems that allowed me to keep my development pace steady.
 
-####Don't use design patterns before they're needed
+####Don't prematurely optimize the code
 
-Another mistake I made (also before testing) was deciding to use patterns before I needed them, specifically the *observer pattern*. I thought that because I wanted to keep my code organized early on, I should create some grand architecture scheme to seperate my ui from the logic, [Here is a snapshot](https://github.com/lpaulger/cribbage-the-game/blob/a041df9b4f7505bd5c7a16aa97cd2f01e1c83a51). What I actually ended up doing was the opposite of my intent, I coupled the game and the ui because I hadn't yet understood the real problem with my decision.
+Another mistake I made (also before testing) was deciding to use the *observer pattern* patterns before having a problem that the pattern was designed to solve. I thought that by using this pattern I could pre-emptively keep my code clean and organized, [Here is a snapshot](https://github.com/lpaulger/cribbage-the-game/blob/a041df9b4f7505bd5c7a16aa97cd2f01e1c83a51). What actually happened was the opposite of my intent, I coupled the game and the ui because I hadn't yet understood the real problem with my decision. In turn this made my code harder to understand.
 
-As I mentioned above, I recognized that I was in **the drag** stage, something needed to change if I was to make any more progress. My solution was to remove the design pattern and simply manage communication in a single file (app.js) instead of through a mediator passing events around. [snapshot](https://github.com/lpaulger/cribbage-the-game/tree/613ffc0d3c21130f9f2af787a32987ca8edaef19).
+As I mentioned above, I recognized that I was in **the drag** state, something needed to change if I was to make any more progress. My solution was to remove the design pattern and simply manage communication in a single file (app.js) instead of observing events passed by each module of the code. [snapshot](https://github.com/lpaulger/cribbage-the-game/tree/613ffc0d3c21130f9f2af787a32987ca8edaef19).
 
 ####Refactor when the need arises, don't plan ahead
 
-By limiting when I refactor to only after I've indentify a problem, I learned to allowe forproper growth of my application.  I decided to bring the **observer pattern** back (as the mediator pattern) once I noticed a problem of responsibility. Some classes were doing too much communicating outside their scope.
+By limiting when I refactor to only after I've indentify a problem, I learned to allow for proper growth of my application.  I decided to bring the **observer pattern** back (as the mediator pattern) once I noticed a problem of responsibility. Some classes were doing too much communicating outside their scope.
+
+The *mediator pattern* fit nicely because I could have one location for intercommunication, This class gives you much insight into the flow of the application, yet is fairly simple to understand.
 
 ####Javascript Skills
 Finally, a list of skills I *actually* improved through developing only in javascript.
