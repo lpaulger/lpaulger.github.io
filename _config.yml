@@ -1,6 +1,6 @@
 # Site Info
-title:              "LP Projects"
-description:        "International - Freelance Frontend Developer"
+title:              "Lucas Paulger"
+description:        "Web Developer"
 #google_verify:      epFgX0s_0RM3CdjwFcsewfXzPov2g8s9ZBOLyaIUH-o # Put your Google Verification here
 google_analytics:   UA-23249160-1 # Put your Google Analytics code
 
@@ -18,7 +18,7 @@ permalink:          /:categories/:year/:month/:day/:title  # Post permalink
 timezone:           Europe/Bucharest # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Site Build
-highlighter:        pygments
+highlighter:        rouge
 #markdown:           redcarpet
 #redcarpet:
 #    extensions:     ["no_intra_emphasis", "fenced_code_blocks", "autolink", "tables", "with_toc_data", "highlight", "footnotes"]
