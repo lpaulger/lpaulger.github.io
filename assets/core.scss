@@ -1,0 +1,14 @@
+---
+# Front matter comment to ensure Jekyll properly reads file.
+---
+$fa-font-path: '/assets/fonts';
+
+
+
+@import 'main';
+@import 'fontawesome/font-awesome';
+@import 'syntax';
+@import 'social';
+a {
+  color: #f14e32;
+}

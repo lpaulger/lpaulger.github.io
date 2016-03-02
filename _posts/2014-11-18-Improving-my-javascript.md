@@ -6,41 +6,41 @@ description: "How I spent the last few months working on a small single page app
 category: javascript
 tags: [javascript, integration, testing, TDD]
 ---
-
-<img class="mobile-gif" align="left" height="480" src="/images/2014-11-19/cribbage-the-game-demo.gif">
-
+<div style="margin: 0 auto; text-align: center;">
+  <img class="mobile-gif" align="center" height="480" src="/images/2014-11-19/cribbage-the-game-demo.gif">
+</div>
 Here's my **[simple javascript cribbage game](http://lucaspaulger.com/cribbage-the-game/)**, and some things I learned along the way.  
 Below is a **quick summary** of the topics:
 
-* problems (and solutions) I found during devlopment
+* problems (and solutions) I found during development
 * creating a build/integration cycle for javascript apps
 * setting up automated deployments to github pages
 
-About five months ago I began work on this game. I wanted to improve my skills and knowledge of javascript, and I figured what better way to do that than creating a simple game *using* javascript. 
+About five months ago I began work on this game. I wanted to improve my skills and knowledge of javascript, and I figured what better way to do that than creating a simple game *using* javascript.
 
 *And so it began...*
 
-###Development - Improving my process!
+### Development - Improving my process!
 
-####Understand the importance of unit tests
+#### Understand the importance of unit tests
 
-Tests really helped me understand the problem I was trying to solve and at a managable level.  Before I began writing tests, I found myself in what I like to call **the drag**. The drag occurs when code becomes too confusing to follow, and the speed of development comes to a screeching halt. 
+Tests really helped me understand the problem I was trying to solve and at a manageable level.  Before I began writing tests, I found myself in what I like to call **the drag**. The drag occurs when code becomes too confusing to follow, and the speed of development comes to a screeching halt.
 
-The best defense against **the drag** was to simply write unit tests. Tests have proven to be powerful asset to a code base. Once some tests were in place, I started to think of the app as a bunch of simple, yet intuitive problems. These problems in turn could be built upon each other to solve the larger, more complex problems as well; but with the stability and foundation that I could trust. Most commonly I would identify a complex problem, then break it down into multiple small but managable problems that allowed me to keep my development pace steady.
+The best defense against **the drag** was to simply write unit tests. Tests have proven to be powerful asset to a code base. Once some tests were in place, I started to think of the app as a bunch of simple, yet intuitive problems. These problems in turn could be built upon each other to solve the larger, more complex problems as well; but with the stability and foundation that I could trust. Most commonly I would identify a complex problem, then break it down into multiple small but manageable problems that allowed me to keep my development pace steady.
 
-####Don't prematurely optimize the code
+#### Don't prematurely optimize the code
 
-Another mistake I made (also before testing) was deciding to use the *observer pattern* patterns before having a problem that the pattern was designed to solve. I thought that by using this pattern I could pre-emptively keep my code clean and organized, [Here is a snapshot](https://github.com/lpaulger/cribbage-the-game/blob/a041df9b4f7505bd5c7a16aa97cd2f01e1c83a51). What actually happened was the opposite of my intent, I coupled the game and the ui because I hadn't yet understood the real problem with my decision. In turn this made my code harder to understand.
+Another mistake I made (also before testing) was deciding to use the *observer pattern* patterns before having a problem that the pattern was designed to solve. I thought that by using this pattern I could preemptively keep my code clean and organized, [Here is a snapshot](https://github.com/lpaulger/cribbage-the-game/blob/a041df9b4f7505bd5c7a16aa97cd2f01e1c83a51). What actually happened was the opposite of my intent, I coupled the game and the ui because I hadn't yet understood the real problem with my decision. In turn this made my code harder to understand.
 
 As I mentioned above, I recognized that I was in **the drag** state, something needed to change if I was to make any more progress. My solution was to remove the design pattern and simply manage communication in a single file (app.js) instead of observing events passed by each module of the code. [snapshot](https://github.com/lpaulger/cribbage-the-game/tree/613ffc0d3c21130f9f2af787a32987ca8edaef19).
 
-####Refactor when the need arises, don't plan ahead
+#### Refactor when the need arises, don't plan ahead
 
-By limiting when I refactor to only after I've indentify a problem, I learned to allow for proper growth of my application.  I decided to bring the **observer pattern** back (as the mediator pattern) once I noticed a problem of responsibility. Some classes were doing too much communicating outside their scope.
+By limiting when I refactor to only after I've identified a problem, I learned to allow for proper growth of my application.  I decided to bring the **observer pattern** back (as the mediator pattern) once I noticed a problem of responsibility. Some classes were doing too much communicating outside their scope.
 
 The *mediator pattern* fit nicely because I could have one location for intercommunication, This class gives you much insight into the flow of the application, yet is fairly simple to understand.
 
-####Javascript Skills
+#### Javascript Skills
 Finally, a list of skills I *actually* improved through developing only in javascript.
 
 * ECMAScript Api
@@ -49,7 +49,7 @@ Finally, a list of skills I *actually* improved through developing only in javas
 * [Localstorage](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Storage) using json stringified data
 * module development ([Requirejs](http://requirejs.org/))
 
-###Build & Configuration - Improving my process
+### Build & Configuration - Improving my process
 
 Early on I knew about [Travis CI](https://travis-ci.org/) as a free, open-source continuous integration service.  Take a look at my [.travis.yml file](https://github.com/lpaulger/cribbage-the-game/blob/master/.travis.yml) to understand how I configured my CI, along with my [grunt file](https://github.com/lpaulger/cribbage-the-game/blob/master/Gruntfile.js) for what tasks are run by the CI.
 
@@ -62,10 +62,10 @@ grunt uses node, so travis should do the same.
   - '0.10'
 ```
 
-Enviornment setup tasks
+Environment setup tasks
 I use sass (and compass)
 grunt for tasks
-and bower for package managment
+and bower for package management
 
 ```shell
   before_install:
@@ -130,14 +130,14 @@ The Deploy (automatically to github pages)
 
 ```
 
-###Deployment - Automate it!
+### Deployment - Automate it!
 
 How I setup buildcontrol can be seen [here](https://github.com/lpaulger/cribbage-the-game/commit/ee16ef2e7d037c0cc0ef53b57f16e506a22e2378).  I generated an encryption key thats safe to add to github, the steps can be found at [http://docs.travis-ci.com/user/encryption-keys/](http://docs.travis-ci.com/user/encryption-keys/).
 
 
-###Conclussion
+### Conclussion
 I know I've only captures a fraction of what I learned in this post, but if any readers have questions or would like an explanation to something; please leave a comment!  
 
-This experience was extrememly useful in becoming familiar with javascript, javascript tools and development processes in general. To anyone reading this, I would reccomend trying to build something on any scale in your free time to expand your knowledge of the web, and whats possible. 
+This experience was extremely useful in becoming familiar with javascript, javascript tools and development processes in general. To anyone reading this, I would recommend trying to build something on any scale in your free time to expand your knowledge of the web, and whats possible.
 
 **Thanks everyone! - Lucas**

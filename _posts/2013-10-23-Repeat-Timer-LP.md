@@ -6,7 +6,7 @@ category: javascript
 tags: [javascript, phonegap, yeoman, grunt, bower, AngularJS]
 ---
 
-<iframe src="http://lucaspaulger.com/timerApp/#/" class="mobile-app"></iframe>
+<iframe src="http://lucaspaulger.com/timerApp/#/" height="480px"></iframe>
 
 ## The app
 
@@ -38,17 +38,17 @@ I would love for people who want to learn phonegap or angularjs to contribute to
 
 ##### Install global tools
 Assuming node, npm and optionally nvm are installed.
-    
+
     npm install -g yo
     npm install -g cordova
 
 ##### run package installers
-    
+
     npm install
     bower install
 
 ##### serve web
-    
+
     grunt server
 
 ##### build web
@@ -56,7 +56,7 @@ Assuming node, npm and optionally nvm are installed.
     grunt build
 
 ##### build ios
-    
+
     cordova plugin add org.apache.cordova.device
     cordova plugin add org.apache.cordova.vibration
     cordova plugin add org.apache.cordova.inappbrowser

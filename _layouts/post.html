@@ -1,20 +1,31 @@
 ---
 layout: default
+comments: true
 ---
-<div class="page-header">
-  <img src="http://www.gravatar.com/avatar/64fa194d80712ca6caa1843bc538a11e.png" alt="author" class="img-circle pull-right">
-  <h1>{{ page.title }} <small></small></h1>
-  <p class="meta">{{ page.date | date_to_string }}</p>
+
+<noscript>
+	<style>
+
+		article .footnotes {
+			display: block;
+		}
+
+	</style>
+</noscript>
+
+<article>
+
+	<div class="center">
+		<h1>{{ page.title }}</h1>
+		<time>{{ page.date | date: '%B %-d, %Y' }}</time>
+	</div>
+
+	<div class="divider"></div>
+
+	{{ content }}
+
+</article>
+
+<div class="back">
+	<a href="{{site.baseurl}}/">Back</a>
 </div>
-
-<ul class="clearfix">
-{% for tag in page.tags %}
-  <li style="list-style: none;padding:5px;" class="pull-left"><span class="label label-primary">{{tag}}</span></li>
-{% endfor %}
-</ul>
-
-<div class="post">
-  {{ content }}
-</div>
-
-{% include comments.html %}

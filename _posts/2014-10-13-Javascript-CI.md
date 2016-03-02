@@ -10,4 +10,4 @@ tags: [javascript, integration, testing, TDD]
 ###Introduction
 
 
-Working on the web today, you've probably heard about writing javascript using test driven development (tdd).  Well I'm not going to tell you why it's good to follow a tdd cycle, but if thats why you're here then check out [this rsource from...]().  Additionally I will not talk about How to write good tests
+Working on the web today, you've probably heard about writing javascript using test driven development (tdd).  Well I'm not going to tell you why it's good to follow a tdd cycle, but if thats why you're here then check out [this resource from...]().  Additionally I will not talk about How to write good tests
