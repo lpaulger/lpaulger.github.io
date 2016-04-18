@@ -4,6 +4,7 @@ title: "JSCover Guide"
 description: "How to get JSCover running with your project"
 category: code-quality
 tags: [javascript, JSCover, test, testing]
+comments: true
 ---
 
 I've begun using [JSCover](http://tntim96.github.com/JSCover/) and have found that understanding how it works isn't as straight forward as I initially thought **(I would say I'm a novice at setting up javascript tooling)**. Lets first get JSCover installed and then move on to explaining how it works.
@@ -12,7 +13,7 @@ I've begun using [JSCover](http://tntim96.github.com/JSCover/) and have found th
 
 1. download from [JSCover Download link](http://sourceforge.net/projects/jscover/files/JSCover-0.2.0.zip/download)
 2. run the example-server.sh (In Terminal or CmdPrompt) you may need to modify this script to configure what options the server is run with.
-    Mac: 
+    Mac:
     sh example-server.sh
     Windows:
     example-server.sh
@@ -27,8 +28,8 @@ Once installed and you've navigated to the link you'll see 5 separate tabs. Lets
 It's important to understand that the executing js needs to exist in the incoming directory. All files you wish not to be tracked (src files, libs, test files) need to ignored using --no-instrument=PATH
 
 Example:
-    
-    java -jar target/dist/JSCover-all.jar -ws --branch 
+
+    java -jar target/dist/JSCover-all.jar -ws --branch
      --document-root=application/Content/scripts/
      --report-dir=jscover --no-instrument=test --no-instrument=src
 

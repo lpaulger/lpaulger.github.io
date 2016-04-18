@@ -4,6 +4,7 @@ title: "Repeat Timer LP"
 description: "Resulting app from blog post"
 category: javascript
 tags: [javascript, phonegap, yeoman, grunt, bower, AngularJS]
+comments: true
 ---
 
 <iframe src="http://lucaspaulger.com/timerApp/#/" height="480px"></iframe>

@@ -4,9 +4,10 @@ title: "Baby steps with AngularJS"
 description: "How I succeeded and failed while using and learning AngularJS"
 category: frameworks
 tags: [javascript, AngularJS]
+comments: true
 ---
 
-As I dive into front-end web development head first, I'm quickly learning that things don't always work perfectly.  Let me start of by saying AngularJS is a fairly new javascript library/framework compared to others aiming to solve the client side application problem.  When I was tasked at picking a tool/framework, I chose AngularJS for a few reasons. 
+As I dive into front-end web development head first, I'm quickly learning that things don't always work perfectly.  Let me start of by saying AngularJS is a fairly new javascript library/framework compared to others aiming to solve the client side application problem.  When I was tasked at picking a tool/framework, I chose AngularJS for a few reasons.
 
 ### Why AngularJS?
 
@@ -22,7 +23,7 @@ The next big hurdle I had to accomplish was how to integrate with third party li
 
     /*globals qq*/
     'use strict';
-    
+
     angular.module('fineUploaderService', []).factory('fineUploader', [function(){
       return qq;
     }]);
@@ -49,7 +50,7 @@ Just check out Karmas website - this tool offers so much value, without much wor
 
 Yeoman, Grunt, Bower - the trio of front end development!  I can't imagine developing without these. [Check them out!](http://yeoman.io/)
 
-[Heroku](https://devcenter.heroku.com/)  makes getting a web application up and running for free as simple as it gets! 
+[Heroku](https://devcenter.heroku.com/)  makes getting a web application up and running for free as simple as it gets!
 
 ### What I've learned
 
@@ -58,4 +59,3 @@ Angularjs paired with some amazing tools makes developing for the web fast, easy
 Look forward to my next article involving [Phonegap](http://phonegap.com/) and what it takes to develop angularjs for mobile applications!
 
 Until next time - Lucas
-

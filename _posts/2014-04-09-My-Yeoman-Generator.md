@@ -4,6 +4,7 @@ title: "My Yeoman Generator [grunt, cordova, angularjs]"
 description: "Yeoman generator to get you up and running with an angularjs phonegap"
 category: javascript
 tags: [javascript, phonegap, yeoman, grunt, bower, AngularJS]
+comments: true
 ---
 
 ### [Quicklink - Github](https://github.com/lpaulger/generator-ng-cordova) [![Build Status](https://secure.travis-ci.org/exBerliners/generator-ng-cordova.png?branch=master)](https://travis-ci.org/exBerliners/generator-ng-cordova)

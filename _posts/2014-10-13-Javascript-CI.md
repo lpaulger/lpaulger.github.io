@@ -5,6 +5,7 @@ title: "How to setup javascript tests and continious integration"
 description: "Describing steps on how to setup an effective javascript testing enviornment that is ready to integrate into a proper continuous integration process."
 category: javascript
 tags: [javascript, integration, testing, TDD]
+comments: true
 ---
 
 ###Introduction

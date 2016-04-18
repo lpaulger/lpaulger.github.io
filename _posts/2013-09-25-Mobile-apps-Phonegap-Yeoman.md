@@ -4,6 +4,7 @@ title: "Mobile Apps with Phonegap and Yeoman"
 description: "How to create a single page app for web and mobile"
 category: javascript
 tags: [javascript, phonegap, yeoman, grunt, bower, AngularJS]
+comments: true
 ---
 
 <h3><a href="https://github.com/lpaulger/timerApp"><i class="icon-github icon-2x"></i> Link to github repository</a></h3>
@@ -35,7 +36,7 @@ Install these tools:
     npm install -g cordova
 
 Next lets create our application structure using the following 'cordova' command. I'll call my app 'timer'. Make sure you are using node version 0.10
-  
+
     nvm use 0.10
     cordova create timer com.lpprojects.timerapp "TimerApp" /** the com.company.appname is like a backwards web domain naming convention for mobile apps **/
     cd timer
@@ -60,7 +61,7 @@ Now it's time to use [Yeoman](http://Yeoman.io) to scaffold a basic angular appl
 Now that your scaffolded app is complete, lets take a look at what it generated:
 
 * app ~ this is where your development code will live
-* node_modules ~ all grunt modules are installed here 
+* node_modules ~ all grunt modules are installed here
 * test ~ if (hopefully when) you write tests, they will go here
 * component.json ~ think of this as your front-end package information
 * gruntfile.js ~ the file containing all the tools to develop, test and deploy code (Why not take a look inside)
@@ -115,7 +116,7 @@ Yeoman scaffolding uses an older versions of angular, so I will upgrade that fir
     }
 
 Run the following command to install these packages:
-  
+
     bower install
 
 The new version of angular broke the generated code, time to fix this.
@@ -140,7 +141,7 @@ The other three dependencies will be used to enhance the mobile development.
     "sass-bootstrap": "~2.3"
 
 #### Run in terminal
-    
+
     bower install
 
 
@@ -290,13 +291,13 @@ Please note for the else condition, I moved the 'concat' task before 'imagemin' 
 
 you will notice, when we pass 'phonegap' as the target, it simply cleans the phonegap directory, builds the app, and copies the re-build code to the phonegap directory. The last command build the actual ios application.
 
-To build the web app, simply run 
+To build the web app, simply run
 
     grunt build
 
 And to build the phonegap app run
 
-    grunt build:phonegap 
+    grunt build:phonegap
 
 ### Debugging
 
@@ -332,5 +333,3 @@ In main.js I refer to this call.  Now for some device specific features, they ar
 ### Conclusion
 
 Thats all you need to start developing phonegap mobile apps. Just remember, the libraries and tools I use will surely be upgraded as time goes on, keep that in mind when following my instructions. If you have any questions, confusions or suggestions please feel free to leave a message below. Happy mobile app development!
-
-

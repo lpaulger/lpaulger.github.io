@@ -5,6 +5,7 @@ title: "How I improved my javascript"
 description: "How I spent the last few months working on a small single page application using only javascript* and how I went about testing, integrating and deploying this application."
 category: javascript
 tags: [javascript, integration, testing, TDD]
+comments: true
 ---
 <div style="margin: 0 auto; text-align: center;">
   <img class="mobile-gif" align="center" height="480" src="/images/2014-11-19/cribbage-the-game-demo.gif">
