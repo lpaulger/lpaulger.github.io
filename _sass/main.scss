@@ -249,7 +249,7 @@ table {
 iframe {
   width: 100%;
 }
-article {
+article, #disqus_thread {
   max-width: 500px;
   margin: 0 auto;
   .title {
@@ -346,6 +346,20 @@ section {
     }
   }
 }
+
+// special override to handle gists
+.gist {
+  position: inherit;
+  width: auto;
+
+
+  @media (min-width: 768px) {
+    position: relative;
+    right: 150px;
+    width: 800px;
+  }
+}
+
 @keyframes bounce {0% {
     transform: translate3d( 0, -1000px, 0 );
   }

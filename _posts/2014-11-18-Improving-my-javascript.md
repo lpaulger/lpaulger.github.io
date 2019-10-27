@@ -10,7 +10,7 @@ comments: true
 <div style="margin: 0 auto; text-align: center;">
   <img class="mobile-gif" align="center" height="480" src="/images/2014-11-19/cribbage-the-game-demo.gif">
 </div>
-Here's my **[simple javascript cribbage game](http://lucaspaulger.com/cribbage-the-game/)**, and some things I learned along the way.  
+Here's my **[simple javascript cribbage game](https://lucaspaulger.com/cribbage-the-game/)**, and some things I learned along the way.  
 Below is a **quick summary** of the topics:
 
 * problems (and solutions) I found during development
@@ -48,7 +48,7 @@ Finally, a list of skills I *actually* improved through developing only in javas
  * [query selectors](https://developer.mozilla.org/en-US/docs/Web/API/document.querySelector) (No more jQuery!)
  * [Array iteration](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
 * [Localstorage](https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Storage) using json stringified data
-* module development ([Requirejs](http://requirejs.org/))
+* module development ([Requirejs](https://requirejs.org/))
 
 ### Build & Configuration - Improving my process
 
@@ -133,7 +133,7 @@ The Deploy (automatically to github pages)
 
 ### Deployment - Automate it!
 
-How I setup buildcontrol can be seen [here](https://github.com/lpaulger/cribbage-the-game/commit/ee16ef2e7d037c0cc0ef53b57f16e506a22e2378).  I generated an encryption key thats safe to add to github, the steps can be found at [http://docs.travis-ci.com/user/encryption-keys/](http://docs.travis-ci.com/user/encryption-keys/).
+How I setup buildcontrol can be seen [here](https://github.com/lpaulger/cribbage-the-game/commit/ee16ef2e7d037c0cc0ef53b57f16e506a22e2378).  I generated an encryption key thats safe to add to github, the steps can be found at [https://docs.travis-ci.com/user/encryption-keys/](https://docs.travis-ci.com/user/encryption-keys/).
 
 
 ### Conclussion

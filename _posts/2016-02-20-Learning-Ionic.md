@@ -8,13 +8,13 @@ description: ""
 
 ![](https://d262ilb51hltx0.cloudfront.net/max/1600/1*PkMYQk5f7MGrreUD18FVMQ.jpeg)
 <span class="figcaption_hack">courtesy of
-[http://www.wheelsforwomen.co.uk/](http://www.wheelsforwomen.co.uk/wp/wp-content/uploads/2013/09/euroshina-the-speed-bump-20.jpg)</span>
+[https://www.wheelsforwomen.co.uk/](https://www.wheelsforwomen.co.uk/wp/wp-content/uploads/2013/09/euroshina-the-speed-bump-20.jpg)</span>
 
 ### Road bumps learning Ionic
 
 I’ve worked with Cordova [in the
 past](https://github.com/lpaulger/cribbage-the-game) but recently I decided to
-take on learning [Ionic](http://ionicframework.com/). In doing so I struggled
+take on learning [Ionic](https://ionicframework.com/). In doing so I struggled
 with some weird issues, extensive stack overflowing, and generally slow
 development. Because of this frustration I am hoping to save others from
 experiencing the same thing :).
@@ -50,9 +50,9 @@ Their are some quirky side effects like not updating package files correctly.
 Think about what devices to support **(android, iOS, Windows phone)**. From my
 experience, having a device on hand is the best to develop against.
 
-* [Android instructions](http://developer.android.com/tools/device.html)
+* [Android instructions](https://developer.android.com/tools/device.html)
 * [iOS
-instructions](http://developer.telerik.com/featured/a-concise-guide-to-remote-debugging-on-ios-android-and-windows-phone/#ios)
+instructions](https://developer.telerik.com/featured/a-concise-guide-to-remote-debugging-on-ios-android-and-windows-phone/#ios)
 (didn’t personally follow this)
 
 #### If you must… use an emulator with **the right configuration**
@@ -62,7 +62,7 @@ into *Emulated devices*. There are two primary options for Android:
 
 * [Genymotion](https://www.genymotion.com/)
 * [Android Emulator from
-Google](http://developer.android.com/tools/help/emulator.html)
+Google](https://developer.android.com/tools/help/emulator.html)
 
 When building Ionic apps, it was difficult to **find an emulator (and
 configuration) that performed well/decent**.
@@ -71,7 +71,7 @@ configuration) that performed well/decent**.
 location, etc).
 
 My primary issue with Genymotion was
-[performance](http://stackoverflow.com/questions/32130738/emulating-ionic-really-slow-even-on-genymotion-just-using-the-tabs-example),
+[performance](https://stackoverflow.com/questions/32130738/emulating-ionic-really-slow-even-on-genymotion-just-using-the-tabs-example),
 but I did manage to find one configuration that ran okay:
 
 **> HTC One — 4.4.4 — API 19–1080x1920**
@@ -80,7 +80,7 @@ I tried devices with version 6.x but they immediately crash when trying to
 access the *Camera* device feature.
 
 [The android emulator by
-google](http://developer.android.com/tools/help/emulator.html) performs better
+google](https://developer.android.com/tools/help/emulator.html) performs better
 (IMO) than Genymotion when running ionic apps; but it is more complicated to
 setup.
 
@@ -184,11 +184,11 @@ Coming from the web world, I didn’t think twice about how to implement
 navigating inside my ionic app. I event went as far as implementing
 **html5Mode**. **DON’T DO THIS**. Doing so will cause the deployed version to
 have [invalid file paths on the
-device](http://stackoverflow.com/questions/35202759/android-asset-www-missing-from-file-paths-when-building-without-livereload/35204296#35204296).
+device](https://stackoverflow.com/questions/35202759/android-asset-www-missing-from-file-paths-when-building-without-livereload/35204296#35204296).
 
 Additionally, in the future in Ionic 2 will enforce a more native form of
 navigation: [The navigation
-stack](http://ionicframework.com/docs/v2/components/#navigation). So again, keep
+stack](https://ionicframework.com/docs/v2/components/#navigation). So again, keep
 this in mind when developing.
 
 #### **$ionicPlatform.ready()*** *inside your services/controllers

@@ -7,19 +7,19 @@ tags: [javascript, phonegap, yeoman, grunt, bower, AngularJS]
 comments: true
 ---
 
-### [Quicklink - Github](https://github.com/lpaulger/generator-ng-cordova) [![Build Status](https://secure.travis-ci.org/exBerliners/generator-ng-cordova.png?branch=master)](https://travis-ci.org/exBerliners/generator-ng-cordova)
+### [Quicklink - Github](https://github.com/lpaulger/generator-ng-cordova) [![Build Status](https://secure.travis-ci.org/lpaulger/generator-ng-cordova.png?branch=master)](https://travis-ci.org/lpaulger/generator-ng-cordova)
 
 ### Introduction - Yeoman Generators
 
-If you're currently developing with [Yeoman](http://yeoman.io) or [Grunt](http://gruntjs.com)  then you probably have heard of or even used a yeoman generator before. After using a generator for a while it's likely to find things you wish were different about the generator or additional features you'd like to see implemented.
+If you're currently developing with [Yeoman](https://yeoman.io) or [Grunt](https://gruntjs.com)  then you probably have heard of or even used a yeoman generator before. After using a generator for a while it's likely to find things you wish were different about the generator or additional features you'd like to see implemented.
 
 When I first used yeoman and grunt I found myself tweaking the gruntfile.js to fit my preferences and needs. This was great while working on my current project, but when it came time to start the next project I realized I'd have to leave my gruntfile preferences behind, or copy them to the new project, risking compatibility issues.
 
 ### The Aha Moment
-Why not create my own generator? It will have my preferences, and meet my needs when developing.  Brilliant idea, but isn't creating a generator hard? I first began by looking at an [existing generators](https://github.com/yeoman/generator-angular) code and it seemed very foreign to me. After discovering and reading the official [generator introduction](http://yeoman.io/generators.html) by yeoman I began understanding the task and realizing it was much easier than I first anticipated.
+Why not create my own generator? It will have my preferences, and meet my needs when developing.  Brilliant idea, but isn't creating a generator hard? I first began by looking at an [existing generators](https://github.com/yeoman/generator-angular) code and it seemed very foreign to me. After discovering and reading the official [generator introduction](https://yeoman.io/generators.html) by yeoman I began understanding the task and realizing it was much easier than I first anticipated.
 
 ### Getting Started
-To start, visit yeoman's generator [introduction page](http://yeoman.io/generators.html). The documentation seems to be a little outdates as the templating format has changed from using the **prototype chain**:
+To start, visit yeoman's generator [introduction page](https://yeoman.io/generators.html). The documentation seems to be a little outdates as the templating format has changed from using the **prototype chain**:
 
 ```
 var BlogGenerator = module.exports = function BlogGenerator(args, options, config) {
@@ -59,9 +59,9 @@ It's that easy! check out [the repo](https://github.com/lpaulger/generator-ng-co
 
 ### Description
 
-I've created this generator to help me setup new [angularjs](http://angularjs.org) and [phonegap](http://phonegap.com/) applications. The idea started with my [yeoman and phonegap](/javascript/2013/09/25/Mobile-apps-Phonegap-Yeoman) tutorial receiving some suggestions for a yeoman generator.  Since I'm a bit of a fanboy for [angularjs](http://angularjs.org) I wrote this generator to specifically template my application around how an angularjs application would be structured.  With tools and libraries like [Ionic](http://ionicframework.com) openly available, it's given me ideas on how I'd like to expand my generator.
+I've created this generator to help me setup new [angularjs](https://angularjs.org) and [phonegap](https://phonegap.com/) applications. The idea started with my [yeoman and phonegap](/javascript/2013/09/25/Mobile-apps-Phonegap-Yeoman) tutorial receiving some suggestions for a yeoman generator.  Since I'm a bit of a fanboy for [angularjs](https://angularjs.org) I wrote this generator to specifically template my application around how an angularjs application would be structured.  With tools and libraries like [Ionic](https://ionicframework.com) openly available, it's given me ideas on how I'd like to expand my generator.
 
 ### Conclusion
-Check out [Yeoman Generators](http://yeoman.io/generators.html) to see how it can improve your development and feel free to get involved with ones already existing.
+Check out [Yeoman Generators](https://yeoman.io/generators.html) to see how it can improve your development and feel free to get involved with ones already existing.
 
 *Thank you*

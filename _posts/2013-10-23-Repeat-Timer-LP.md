@@ -7,7 +7,7 @@ tags: [javascript, phonegap, yeoman, grunt, bower, AngularJS]
 comments: true
 ---
 
-<iframe src="http://lucaspaulger.com/timerApp/#/" height="480px"></iframe>
+<iframe src="https://lucaspaulger.com/timerApp/#/" height="480px"></iframe>
 
 ## The app
 

@@ -11,13 +11,13 @@ As I dive into front-end web development head first, I'm quickly learning that t
 
 ### Why AngularJS?
 
-To begin, I read [a blog post](http://blog.stevensanderson.com/2012/08/01/rich-javascript-applications-the-seven-frameworks-throne-of-js-2012/)  written by the creator of [Knockout.js](http://knockoutjs.com/) where I have previous development experience. Anderson the author, in my opinion gave a very non-biased evaluation of libs/frameworks that already exist; and I recommend it for anyone who is looking to understand the differences of these frameworks.
+To begin, I read [a blog post](https://blog.stevensanderson.com/2012/08/01/rich-javascript-applications-the-seven-frameworks-throne-of-js-2012/)  written by the creator of [Knockout.js](https://knockoutjs.com/) where I have previous development experience. Anderson the author, in my opinion gave a very non-biased evaluation of libs/frameworks that already exist; and I recommend it for anyone who is looking to understand the differences of these frameworks.
 
-When it came time to deciding, I narrowed my choices to [backbone.js](http://backbonejs.org/) for it's age, size and community; [Knockout.js](http://knockoutjs.com/) because of my previous experience; and of course [AngularJS](http://angularjs.org/) for its emphasis on Design pattens, testing, and its google...  Looking back, I should have considered [Ember.js](http://emberjs.com/) as well, from what I read, it bring comparable features, design patterns and works really well against a RoR back-end.
+When it came time to deciding, I narrowed my choices to [backbone.js](https://backbonejs.org/) for it's age, size and community; [Knockout.js](https://knockoutjs.com/) because of my previous experience; and of course [AngularJS](https://angularjs.org/) for its emphasis on Design pattens, testing, and its google...  Looking back, I should have considered [Ember.js](https://emberjs.com/) as well, from what I read, it bring comparable features, design patterns and works really well against a RoR back-end.
 
 ### My introduction to AngularJS
 
-Once I got my hands dirty in Angular, I started to understand the good parts, and the bad. Now let me explain - When I started building a simple angular app, I experienced getting data from a server, binding data to the DOM and watching the scope (angular concept) change the DOM as I interacted with the application (clicks, inputs, etc..). It was simple, and intuitive.  Understanding Dependency Injection [DI] took some time to understand, but Angular really showed its strengths when used with the jasmine testing framework! [here is my first SO angular question :)](http://stackoverflow.com/questions/14766051/angularjs-issues-mocking-httpget-request).
+Once I got my hands dirty in Angular, I started to understand the good parts, and the bad. Now let me explain - When I started building a simple angular app, I experienced getting data from a server, binding data to the DOM and watching the scope (angular concept) change the DOM as I interacted with the application (clicks, inputs, etc..). It was simple, and intuitive.  Understanding Dependency Injection [DI] took some time to understand, but Angular really showed its strengths when used with the jasmine testing framework! [here is my first SO angular question :)](https://stackoverflow.com/questions/14766051/angularjs-issues-mocking-httpget-request).
 
 The next big hurdle I had to accomplish was how to integrate with third party libraries - in my case [fineuploader](fineuploader.com). I wish I had more time to implement my own solution here but I didn't; so I had to figure out the best way to integrate this into my angular app. I think the code below is common practice and allows you to inject the external lib into any module you need:
 
@@ -42,13 +42,13 @@ Here is a [link](https://gist.github.com/lpaulger/) to some of my personal gists
 
 Testing is made easy with Angular - Dependency injection paired with its mocking libraries make it easy and quick to write unit tests!  Paired with googles amazing testing tool - Karma - you can't go wrong!
 
-#### [Karma](http://karma-runner.github.io/)(Formerly Testactular)
+#### [Karma](https://karma-runner.github.io/)(Formerly Testactular)
 
 Just check out Karmas website - this tool offers so much value, without much work. really all you do is write your tests, and Karma handles testing on multiple browsers, devices, and even makes Continuous integration a breeze!  Check it out!
 
 ### Tooling
 
-Yeoman, Grunt, Bower - the trio of front end development!  I can't imagine developing without these. [Check them out!](http://yeoman.io/)
+Yeoman, Grunt, Bower - the trio of front end development!  I can't imagine developing without these. [Check them out!](https://yeoman.io/)
 
 [Heroku](https://devcenter.heroku.com/)  makes getting a web application up and running for free as simple as it gets!
 
@@ -56,6 +56,6 @@ Yeoman, Grunt, Bower - the trio of front end development!  I can't imagine devel
 
 Angularjs paired with some amazing tools makes developing for the web fast, easy and reliable!  Angularjs is a powerful framework with a somewhat steady learning curve; but once you have a good understanding of its fundamentals, you will be developing faster than you ever have before!  
 
-Look forward to my next article involving [Phonegap](http://phonegap.com/) and what it takes to develop angularjs for mobile applications!
+Look forward to my next article involving [Phonegap](https://phonegap.com/) and what it takes to develop angularjs for mobile applications!
 
 Until next time - Lucas

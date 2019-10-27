@@ -25,10 +25,10 @@ I will be building a timer app - starting with a blank application, to web appli
 
 Install these tools:
 
-* [Node.js and npm](http://nodejs.org/) node -v 0.10.*
-* [Yeoman](http://Yeoman.io) yo -v 1.0.*
-* [Phonegap/cordova](http://cordova.apache.org/#download) cordova version 3.1.*
-* [Xcode](https://developer.apple.com/xcode/) or [Android SDK + Emulator](http://developer.android.com/sdk/index.html) (depending on what you want)
+* [Node.js and npm](https://nodejs.org/) node -v 0.10.*
+* [Yeoman](https://Yeoman.io) yo -v 1.0.*
+* [Phonegap/cordova](https://cordova.apache.org/#download) cordova version 3.1.*
+* [Xcode](https://developer.apple.com/xcode/) or [Android SDK + Emulator](https://developer.android.com/sdk/index.html) (depending on what you want)
 
 **consider installing both yeoman and phonegap packages globally**
 
@@ -42,7 +42,7 @@ Next lets create our application structure using the following 'cordova' command
     cd timer
     cordova platform add ios /**add platforms you want to support here**/
 
-Now it's time to use [Yeoman](http://Yeoman.io) to scaffold a basic angular application.
+Now it's time to use [Yeoman](https://Yeoman.io) to scaffold a basic angular application.
 
 *Please Note: yeoman allows you to scaffold apps using many frameworks*
 
@@ -50,7 +50,7 @@ Now it's time to use [Yeoman](http://Yeoman.io) to scaffold a basic angular appl
 
     yo angular
 
-[Yeoman](http://Yeoman.io) will ask you a series of questions related to the package you requested(see below). I will not be using these options.
+[Yeoman](https://Yeoman.io) will ask you a series of questions related to the package you requested(see below). I will not be using these options.
 
     Would you like to include Twitter Bootstrap? (Y/n) n
     If so, would you like to use Twitter Bootstrap for Compass (as opposed to vanilla CSS)? (Y/n) n
@@ -67,7 +67,7 @@ Now that your scaffolded app is complete, lets take a look at what it generated:
 * gruntfile.js ~ the file containing all the tools to develop, test and deploy code (Why not take a look inside)
 * package.json ~ this of this as your back-end package info (since this is a single page app, it just contains grunt related info)
 
-Refer to [http://Yeoman.io](http://Yeoman.io) for any additional [Yeoman](http://Yeoman.io) questions I don't cover in this post.
+Refer to [https://Yeoman.io](https://Yeoman.io) for any additional [Yeoman](https://Yeoman.io) questions I don't cover in this post.
 
 ### Configuring
 
@@ -312,19 +312,19 @@ once the phonegap application is build you can run using:
 
     cordova emulate ios
 
-or by opening the xcode project file - appName/platforms/ios/appName.xcodeproj ([instructions](http://docs.phonegap.com/en/edge/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide))
+or by opening the xcode project file - appName/platforms/ios/appName.xcodeproj ([instructions](https://docs.phonegap.com/en/edge/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide))
 
 once the simulator is up and running, open up **Safari** and go to Develop -> iPhone Simulator -> index.html
 
 ### Use the device
 
-Now for the most useful and important part of using phonegap - use the device features  [Here](http://docs.phonegap.com/en/3.0.0/index.html) is the phonegap list of features.  In timer app, I will be making use of the vibration features.
+Now for the most useful and important part of using phonegap - use the device features  [Here](https://docs.phonegap.com/en/3.0.0/index.html) is the phonegap list of features.  In timer app, I will be making use of the vibration features.
 
 When the mobile app is built, a cordova.js file is injected into the root directory.  For simplicity, we will just include the reference in our index.html file.  This will need to go within the head section of the index.html file.
 
     <script src="cordova.js"></script>
 
-Next lets fire the correct events in our app when we want. The [vibration](http://docs.phonegap.com/en/3.0.0/cordova_notification_notification.md.html#notification.vibrate) api can show us what we need to include.  
+Next lets fire the correct events in our app when we want. The [vibration](https://docs.phonegap.com/en/3.0.0/cordova_notification_notification.md.html#notification.vibrate) api can show us what we need to include.  
 
     navigator.notification.vibrate(2500);
 

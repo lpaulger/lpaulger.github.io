@@ -7,17 +7,17 @@ tags: [javascript, JSCover, test, testing]
 comments: true
 ---
 
-I've begun using [JSCover](http://tntim96.github.com/JSCover/) and have found that understanding how it works isn't as straight forward as I initially thought **(I would say I'm a novice at setting up javascript tooling)**. Lets first get JSCover installed and then move on to explaining how it works.
+I've begun using [JSCover](https://tntim96.github.com/JSCover/) and have found that understanding how it works isn't as straight forward as I initially thought **(I would say I'm a novice at setting up javascript tooling)**. Lets first get JSCover installed and then move on to explaining how it works.
 
 ### Installation
 
-1. download from [JSCover Download link](http://sourceforge.net/projects/jscover/files/JSCover-0.2.0.zip/download)
+1. download from [JSCover Download link](https://sourceforge.net/projects/jscover/files/JSCover-0.2.0.zip/download)
 2. run the example-server.sh (In Terminal or CmdPrompt) you may need to modify this script to configure what options the server is run with.
     Mac:
     sh example-server.sh
     Windows:
     example-server.sh
-3.  by default go to [demo page](http://localhost:8080/jscoverage.html?/index.html)
+3.  by default go to [demo page](https://localhost:8080/jscoverage.html?/index.html)
 
 ### Explanation
 
