@@ -1,4 +1,5 @@
 ---
+published: true
 layout: post
 title: "Mobile Apps with Phonegap and Yeoman"
 description: "How to create a single page app for web and mobile"

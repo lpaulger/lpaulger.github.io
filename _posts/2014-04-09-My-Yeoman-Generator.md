@@ -1,4 +1,5 @@
 ---
+published: true
 layout: post
 title: "My Yeoman Generator [grunt, cordova, angularjs]"
 description: "Yeoman generator to get you up and running with an angularjs phonegap"

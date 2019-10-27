@@ -118,6 +118,9 @@ span[data-note] {
   -webkit-animation-fill-mode: both;
   -webkit-animation-name: bounce;
   > a {
+    > img {
+      width: 80px;
+    }
     background: #ddd url("gravatar_wrapper.png");
     color: #000;
     text-decoration: none;
@@ -251,7 +254,7 @@ iframe {
   width: 100%;
 }
 article, #disqus_thread {
-  max-width: 500px;
+  max-width: 680px;
   margin: 0 auto;
   .title {
     line-height: 1.4em;
@@ -306,7 +309,7 @@ article, #disqus_thread {
   }
 }
 section {
-  max-width: 500px;
+  max-width: 680px;
   margin: 0 auto;
   ul {
     list-style: none;

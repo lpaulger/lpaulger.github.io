@@ -3,6 +3,7 @@ published: true
 layout: post
 title: "Modularize legacy javascript"
 description: ""
+comments: true
 ---
 
 * * *

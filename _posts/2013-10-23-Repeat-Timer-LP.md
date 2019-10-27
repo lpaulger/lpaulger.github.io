@@ -1,4 +1,5 @@
 ---
+published: true
 layout: post
 title: "Repeat Timer LP"
 description: "Resulting app from blog post"

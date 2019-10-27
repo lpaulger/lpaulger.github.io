@@ -1,4 +1,5 @@
 ---
+published: true
 layout: post
 title: "JSCover Guide"
 description: "How to get JSCover running with your project"

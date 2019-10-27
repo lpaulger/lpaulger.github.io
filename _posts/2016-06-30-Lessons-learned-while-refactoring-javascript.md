@@ -1,3 +1,11 @@
+---
+published: true
+layout: post
+title: "Lessons learned while refactoring javascript"
+description: ""
+comments: true
+---
+
 ### Lessons learned while refactoring javascript
 
 I’ve just spent the last week refactoring a large chunk of untested code. This came about from having to fix a bug there, but realizing there was **absolutely no way** that I would be able to write a regression test to prove the bug was tested and fixed.

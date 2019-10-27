@@ -1,4 +1,5 @@
 ---
+published: true
 layout: post
 title: "Baby steps with AngularJS"
 description: "How I succeeded and failed while using and learning AngularJS"

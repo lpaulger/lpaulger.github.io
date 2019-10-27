@@ -3,6 +3,7 @@ published: true
 layout: post
 title: "Road bumps learning Ionic"
 description: ""
+comments: true
 ---
 *****
 
