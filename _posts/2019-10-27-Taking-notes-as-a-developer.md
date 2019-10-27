@@ -2,6 +2,7 @@
 published: true
 layout: post
 title: "Taking notes as a software engineer"
+comments: true
 description: ""
 ---
 
