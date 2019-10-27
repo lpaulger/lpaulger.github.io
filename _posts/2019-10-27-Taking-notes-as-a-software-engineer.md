@@ -2,6 +2,7 @@
 published: true
 layout: post
 title: "Taking notes as a software engineer"
+image: /images/2019-10-27/check-class-desk-7103.jpg
 comments: true
 description: ""
 ---
