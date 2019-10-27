@@ -6,6 +6,8 @@ comments: true
 description: ""
 ---
 
+![](/images/2019-10-27/check-class-desk-7103.jpg)
+
 **I'm on a quest to help myself and my colleagues have better meetings.**
 
 In my time as an engineer I've noticed a lot of meetings occur without any _**agenda, notes or action items**_. Then down the road managers expect all involved to just remember the conclusions from the meeting. Sometimes the conclusions aren't even remembered correctly, causing a debate as to what work was agreed to be done.
