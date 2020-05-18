@@ -42,9 +42,8 @@ sass:
 # Other Params
 include:            [ "robots.txt" ]
 exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
-gems:
+plugins:
   - jekyll-sitemap
-
 compress_html:
     clippings:      all
     ingore:
@@ -59,10 +58,12 @@ defaults:
   -
     scope:
       type:         "pages"
+      path:         ""
     values:
       layout:       "page"
   -
     scope:
       type:         "posts"
+      path:         ""
     values:
       layout:       "post"
