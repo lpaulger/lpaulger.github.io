@@ -44,6 +44,7 @@ include:            [ "robots.txt" ]
 exclude:            [ "LICENSE", "README.md", "CNAME", "vendor", "Gemfile" ]
 plugins:
   - jekyll-sitemap
+  - jekyll-feed
 compress_html:
     clippings:      all
     ingore:
