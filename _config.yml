@@ -16,6 +16,7 @@ linkedin_username:  lpaulger
 
 # Site Settings
 baseurl:            "" # Base URL must end WITHOUT a slash, default: ""
+url:                "https://lucaspaulger.com" # the base hostname & protocol for your site, e.g. http://example.com
 permalink:          /:categories/:year/:month/:day/:title/  # Post permalink
 timezone:           Europe/Bucharest # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
