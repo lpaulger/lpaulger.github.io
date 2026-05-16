@@ -24,6 +24,16 @@
 <link rel="apple-touch-icon" href="{{ site.baseurl }}/assets/touch-icon.png">
 <link rel="stylesheet" disabled href="//code.cdn.mozilla.net/fonts/fira.css">
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/core.css">
+<script>
+	(function() {
+		try {
+			var saved = localStorage.getItem('theme');
+			if (saved === 'light' || saved === 'dark') {
+				document.documentElement.setAttribute('data-theme', saved);
+			}
+		} catch (e) {}
+	})();
+</script>
 <link rel="canonical" href="{{ page.url | prepend: site.baseurl }}">
 <link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.baseurl }}/feed.xml" />
 

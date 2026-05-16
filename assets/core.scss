@@ -11,5 +11,5 @@ $fa-font-path: '/assets/fonts';
 @import 'syntax';
 @import 'social';
 a {
-  color: #e2290b;
+  color: var(--accent);
 }
