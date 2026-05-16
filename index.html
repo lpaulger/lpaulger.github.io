@@ -5,26 +5,9 @@ layout: default
 <section>
 	<p><strong>Hello Traveler.</strong></p>
 
-	<p>My name is <strong>Lucas Paulger</strong> and I'm a software engineer currently working with <a href="https://www.jpmorgan.com">J.P. Morgan</a>. Living and working in wonderful <strong>London, UK</strong>.</p>
-	<p>I'm originally from <a href="https://en.wikipedia.org/wiki/Vermont">Vermont, USA</a> but have also called <a href="https://en.wikipedia.org/wiki/Cluj-Napoca">Cluj-Napoca, Romania</a> home as well.</p>
+	<p>I'm <strong>Lucas Paulger</strong>, a software engineer at <a href="https://www.sonarsource.com">Sonar</a> since 2022. Based in <a href="https://en.wikipedia.org/wiki/Cluj-Napoca">Cluj-Napoca, Romania</a>, originally from <a href="https://en.wikipedia.org/wiki/Vermont">Vermont, USA</a>.</p>
 
-	<p>Get in touch via <a href="mailto:lucas.paulger@gmail.com">e-mail</a> or <a href="https://twitter.com/{{ site.twitter_username }}">Twitter</a>.</p>
+	<p>Curious about the future of humans through software.</p>
 
-<hr>
-
-	<ul>
-		{% for post in site.posts %}
-
-		<li>
-			<div class="post-date">
-				<span>{{ post.date | date: "%b %d, %Y" }}</span>
-			</div>
-			<div class="title">
-				<a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-			</div>
-		</li>
-
-		{% endfor %}
-
-	</ul>
+	<p>Get in touch via <a href="mailto:{{ site.email }}">e-mail</a>, <a href="https://github.com/{{ site.github_username }}">GitHub</a>, or <a href="https://linkedin.com/in/{{ site.linkedin_username }}">LinkedIn</a>.</p>
 </section>
